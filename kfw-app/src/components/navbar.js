@@ -14,13 +14,26 @@ return (
 
   <div class="collapse navbar-collapse nav-bar-text-elements" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto text-light">
-      <li class="nav-item active">
-        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active nav-bar-spacing">
+        <a class="nav-link text-light" href="#"> Shop</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Link</a>
+      <li class="nav-item active nav-bar-spacing">
+        <a class="nav-link text-light" href="#">Wine Tastings</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item active nav-bar-spacing">
+        <a class="nav-link text-light" href="#"> Our Story</a>
+      </li>
+      <li class="nav-item nav-bar-spacing">
+        <a class="nav-link text-light" href="#">Newsletter</a>
+      </li>
+      <li class="nav-item nav-bar-spacing">
+        <a class="nav-link text-light" href="#">International</a>
+      </li>
+      <li class="nav-item nav-bar-spacing">
+        <a class="nav-link text-light" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item nav-bar-spacing">
+        <a class="nav-link text-light" href="#">Login</a>
       </li>
     </ul>
   </div>

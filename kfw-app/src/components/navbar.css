@@ -8,5 +8,10 @@
 }
 
 .nav-bar-text-elements{
-    
+    justify-content: right;
+}
+
+.nav-bar-spacing{
+    margin-left: 4px;
+    margin-right: 4px
 }
