@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import './introCarousel.css'
 import FirstSlideImage from './introCarouselImages/test.png';
 import SecondSlideImage from './introCarouselImages/wine.jpg';
-import ThirdSlideImage from './introCarouselImages/test.png';
+import ThirdSlideImage from './introCarouselImages/Lindile-Ndzaba-(11-of-13).jpg';
 
 const IntroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,12 +34,10 @@ const IntroCarousel = () => {
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onClick={handlePrevSlide}>
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
+        <span className="custom-carousel-control-prev-icon" aria-hidden="true"></span>
       </a>
       <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onClick={handleNextSlide}>
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
+        <span className="custom-carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
   );
