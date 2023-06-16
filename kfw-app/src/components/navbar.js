@@ -7,7 +7,7 @@ const NavBar = () =>{
 return (
     <div className='text-light sticky-nav-bar '>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 position-sticky">
-  <a class="navbar-brand text-light" href="#">Logo</a>
+  <a class="navbar-brand text-light" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,7 +18,7 @@ return (
         <a class="nav-link text-light" href="#"> Shop</a>
       </li>
       <li class="nav-item active nav-bar-spacing">
-        <a class="nav-link text-light" href="#">Wine Tastings</a>
+        <a class="nav-link text-light" href="./tastingPage.js">Wine Tastings</a>
       </li>
       <li class="nav-item active nav-bar-spacing">
         <a class="nav-link text-light" href="#"> Our Story</a>
