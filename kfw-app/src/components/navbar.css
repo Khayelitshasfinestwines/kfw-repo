@@ -1,7 +1,12 @@
-.absolute-nav-bar{
-    position: aboslute;
-    top: 0;
-    left: 0;
-    right: 0;
+.sticky-nav-bar{
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.nav-bar-text-elements{
     
 }
