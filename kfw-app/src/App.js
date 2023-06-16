@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavBar from './components/navbar.js'
-
+import IntroCarousel from './components/introCarousel.js'
 
 
 
@@ -10,8 +10,9 @@ import NavBar from './components/navbar.js'
 
 function App() {
   return (
-    <div >
-    <NavBar className='text-light'></NavBar>
+    <div>
+    <NavBar className = 'text-light'></NavBar>
+    <IntroCarousel></IntroCarousel>
     </div>
     
   );
