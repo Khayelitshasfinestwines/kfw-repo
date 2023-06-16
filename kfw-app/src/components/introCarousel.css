@@ -1,0 +1,20 @@
+/* Custom previous arrow icon */
+.custom-carousel-control-prev-icon {
+    border: solid white;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  }
+  
+  /* Custom next arrow icon */
+  .custom-carousel-control-next-icon {
+    border: solid white;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  }
+  
