@@ -17,7 +17,6 @@ const IntroCarousel = () => {
 
   return (
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-      
       <div className="carousel-inner">
         <div className={`carousel-item ${currentSlide === 0 ? 'active' : ''}`}>
           <img className="d-block w-100" src={FirstSlideImage} alt="First slide" />
