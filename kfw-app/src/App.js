@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavBar from './components/navbar.js'
-import IntroCarousel from './components/introCarousel.js'
+import IntroCarousel from './components/introCarousel/introCarousel.js'
 import Story from './components/story/story.js'
 
 import Newsletter from './components/newsletter/newsletter.js'
