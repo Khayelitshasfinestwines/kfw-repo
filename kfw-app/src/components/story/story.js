@@ -6,8 +6,9 @@ const Story = () => {
 
   return (
     <div>
-    <div className="leftcontainer">
-      <div className="content">
+
+        <div className="twocolumns">
+
         <h1 className="storyheader mt-5">Our Story</h1>
         <figure>
         <blockquote class="blockquote mt-3">
@@ -21,15 +22,9 @@ const Story = () => {
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </div>
         
-        <button type="button" class="btn btn-dark btn-lg mt-4 storybutton">Learn More</button>
-      </div>
-    </div>
-
-    <div className="rightcontainer">
-      <div className = "image">
+        <button type="button" class="btn btn-dark btn-sm mt-4 storybutton">Learn More</button>
         <img src = {StoryImage} alt = "Story Image"></img>
-      </div>
-    </div>
+        </div>
     </div>
     )
 }
