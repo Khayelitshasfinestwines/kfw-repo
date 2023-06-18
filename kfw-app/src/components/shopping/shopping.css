@@ -1,0 +1,74 @@
+.shoppingFont1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 50px;
+    font-family: '';
+}
+
+.centerText {
+    display: flex;
+    justify-content: center; /* Adjust the text alignment */
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 10px; /* Decrease the left margin */
+  }
+
+.image-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  
+  .small-image {
+    max-width: 60%;
+    height: 40%;
+  }
+  
+  .image-container2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-top: 30px;
+    padding-left: 0px;
+    
+  }
+  
+  .small-image2 {
+    max-width: 60%;
+    height: 40%;
+  }
+
+  .imageArea {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribebutton {
+    display: flex;
+  justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  
+  
+
+  
+
+
+
+  
+
+  
+
+  
