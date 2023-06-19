@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Tastings(){
+const TastingsPage = ()=>{
+
     return (
         <div>
             Tastings
@@ -12,4 +13,6 @@ function Tastings(){
 
 
 
-export default Tastings
+
+
+export default TastingsPage

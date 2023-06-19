@@ -1,12 +1,10 @@
 
 import './App.css';
-import NavBar from './components/navbar.js'
-import IntroCarousel from './components/introCarousel/introCarousel.js'
-import Story from './components/story/story.js'
 
-import Newsletter from './components/newsletter/newsletter.js'
-import Contacts from './components/contacts/contacts.js'
-import Shopping from './components/shopping/shopping'
+import TastingsPage from './components/tastingPage/tastings.js'
+import Home from './components/Home/home';
+
+import {Route, Routes } from 'react-router-dom';
 
 
 
@@ -14,22 +12,22 @@ import Shopping from './components/shopping/shopping'
 
 function App() {
   return (
+
     <div>
-    <NavBar className = 'text-light'></NavBar>
-    
-    <IntroCarousel></IntroCarousel>
-
-    <Story></Story>
-    <Shopping></Shopping>
-
-    
 
 
-    <Newsletter></Newsletter>
+     <Routes>
+      <Route path='/tastings' element= {<TastingsPage/>}> </Route>
+      <Route path= '/' element = {<Home/>}> </Route>
 
-    <Contacts></Contacts>
+     </Routes>
+
+
 
     </div>
+
+
+
     
   );
 }

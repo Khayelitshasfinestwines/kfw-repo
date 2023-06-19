@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './navbar.css'
+import {Link} from "react-router-dom"
 
 const NavBar = () =>{
 
@@ -18,7 +19,7 @@ return (
         <a class="nav-link text-light" href="#"> Shop</a>
       </li>
       <li class="nav-item active nav-bar-spacing">
-        <a class="nav-link text-light" href="./tastingPage.js">Wine Tastings</a>
+        <Link class="nav-link text-light" to="/tastings">Wine Tastings</Link>
       </li>
       <li class="nav-item active nav-bar-spacing">
         <a class="nav-link text-light" href="#"> Our Story</a>
