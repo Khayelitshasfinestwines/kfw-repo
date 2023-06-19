@@ -6,6 +6,7 @@ import Story from './components/story/story.js'
 
 import Newsletter from './components/newsletter/newsletter.js'
 import Contacts from './components/contacts/contacts.js'
+import Shopping from './components/shopping/shopping'
 
 
 
@@ -19,6 +20,9 @@ function App() {
     <IntroCarousel></IntroCarousel>
 
     <Story></Story>
+    <Shopping></Shopping>
+
+    
 
 
     <Newsletter></Newsletter>
