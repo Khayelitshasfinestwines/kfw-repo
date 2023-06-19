@@ -3,8 +3,7 @@ import './App.css';
 
 import TastingsPage from './components/tastingPage/tastingPage.js'
 import Home from './components/Home/home';
-import NavBar from './components/navbar';
-
+import NavBar from './components/Navbar/navbar';
 import {Route, Routes } from 'react-router-dom';
 import ShoppingPage from './components/shoppingPage/shoppingPage';
 import ContactPage from './components/contactPage/contactPage';

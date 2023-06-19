@@ -2,6 +2,7 @@ import React from 'react';
 import './shopping.css';
 import ShoppingImage from './shoppingImages/wineImage2.jpg'
 import ShoppingImage2 from './shoppingImages/wineImage.jpeg'
+import {Link} from "react-router-dom"
 
 const Shopping = () => {
   return (
@@ -47,7 +48,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     </div>
 
-    <div className='centerText'>  <button type="button" class="btn btn-dark btn-lg mt-4 mb-5">Shop</button>
+    <div className='centerText'> 
+    <Link to = '/shopping'> 
+     <button type="button" class="btn btn-dark btn-lg mt-4 mb-5">Shop</button>
+     </Link>
     </div>
 
   
