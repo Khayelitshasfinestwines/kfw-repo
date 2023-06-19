@@ -16,7 +16,7 @@ return (
   <div class="collapse navbar-collapse nav-bar-text-elements" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto text-light">
       <li class="nav-item active nav-bar-spacing">
-        <a class="nav-link text-light" href="#"> Shop</a>
+        <Link class="nav-link text-light" to="/shopping"> Shop</Link>
       </li>
       <li class="nav-item active nav-bar-spacing">
         <Link class="nav-link text-light" to="/tastings">Wine Tastings</Link>
