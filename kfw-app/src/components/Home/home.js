@@ -3,7 +3,6 @@ import IntroCarousel from './introCarousel/introCarousel.js';
 import Story from './story/story.js';
 
 import Newsletter from './newsletter/newsletter.js';
-import Contacts from './contacts/contacts.js';
 import Shopping from './shopping/shopping.js';
 
 const Home = ()=>{
@@ -13,7 +12,6 @@ const Home = ()=>{
         <Story/>
         <Shopping/>
         <Newsletter/>
-        <Contacts/>
        </div>
     )
 

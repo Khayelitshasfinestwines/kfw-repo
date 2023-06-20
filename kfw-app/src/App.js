@@ -11,6 +11,7 @@ import NewsletterPage from './components/newsletterPage/newsletterPage';
 import StoryPage from './components/storyPage/storyPage';
 import InternationalPage from './components/internationalPage/internationalPage';
 import LoginPage from './components/loginPage/loginPage';
+import Contacts from './components/Home/contacts/contacts';
 
 
 
@@ -32,9 +33,8 @@ function App() {
       <Route path= '/story' element = {<StoryPage/>}> </Route>
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
       <Route path= '/login' element = {<LoginPage/>}> </Route>
-
-
      </Routes>
+     <Contacts/>
 
 
 
