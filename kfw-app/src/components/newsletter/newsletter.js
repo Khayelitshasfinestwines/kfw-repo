@@ -4,7 +4,7 @@ import './newsletter.css'
 const Newsletter = () => {
     return(
         <div>
-            <h1 className = "newsletterheader">Subscribe to our newsletter</h1>
+            <h1 className = "newsletterheader mt-5">Subscribe to our newsletter</h1>
             <p className = 'newslettersubheader'>Stay up to date with the latest news and offerings</p>
             <div className = "overallformcontainer">
             <input class="form-control formcontainer" type="text" placeholder="First Name" aria-label="first name input"></input>
