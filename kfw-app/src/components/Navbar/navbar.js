@@ -25,9 +25,6 @@ const NavBar = () => {
               <Link className="nav-link text-light" to="/story">Our Story</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
-              <Link className="nav-link text-light" to="/newsletter">Newsletter</Link>
-            </li>
-            <li className="nav-item nav-bar-spacing">
               <Link className="nav-link text-light" to="/international">International</Link>
             </li>
             <li className="nav-item nav-bar-spacing">

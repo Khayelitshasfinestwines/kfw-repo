@@ -7,7 +7,6 @@ import NavBar from './components/Navbar/navbar';
 import {Route, Routes } from 'react-router-dom';
 import ShoppingPage from './components/shoppingPage/shoppingPage';
 import ContactPage from './components/contactPage/contactPage';
-import NewsletterPage from './components/newsletterPage/newsletterPage';
 import StoryPage from './components/storyPage/storyPage';
 import InternationalPage from './components/internationalPage/internationalPage';
 import LoginPage from './components/loginPage/loginPage';
@@ -29,7 +28,6 @@ function App() {
       <Route path= '/' element = {<Home/>}> </Route>
       <Route path= '/shopping' element = {<ShoppingPage/>}> </Route>
       <Route path= '/contact' element = {<ContactPage/>}> </Route>
-      <Route path= '/newsletter' element = {<NewsletterPage/>}> </Route>
       <Route path= '/story' element = {<StoryPage/>}> </Route>
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
       <Route path= '/login' element = {<LoginPage/>}> </Route>
