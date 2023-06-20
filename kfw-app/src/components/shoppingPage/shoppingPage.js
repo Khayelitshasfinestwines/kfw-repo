@@ -1,9 +1,7 @@
 import React from 'react';
-import NavBar from '../Navbar/navbar.js';
 import Card from '../Card/Card.js';
 import ShoppingImage from './cardImages/wineImage2.jpg';
 import './shoppingPage.css';
-import Contacts from '../Home/contacts/contacts.js';
 
 const Home = () => {
   return (
