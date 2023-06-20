@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 
-<div className="image-container">
+<div className="image-container2">
   <img src={ShoppingImage} alt="Shopping Image" className="small-image" />
 </div>
 
