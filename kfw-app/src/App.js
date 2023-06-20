@@ -1,12 +1,17 @@
 
 import './App.css';
-import NavBar from './components/navbar.js'
-import IntroCarousel from './components/introCarousel/introCarousel.js'
-import Story from './components/story/story.js'
-import Shopping from './components/shopping/shopping'
-import Tastings from './components/tastings/tastings.js'
-import Newsletter from './components/newsletter/newsletter.js'
-import Contacts from './components/contacts/contacts.js'
+
+import TastingsPage from './components/tastingPage/tastingPage.js'
+import Home from './components/Home/home';
+import NavBar from './components/Navbar/navbar';
+import {Route, Routes } from 'react-router-dom';
+import ShoppingPage from './components/shoppingPage/shoppingPage';
+import ContactPage from './components/contactPage/contactPage';
+import NewsletterPage from './components/newsletterPage/newsletterPage';
+import StoryPage from './components/storyPage/storyPage';
+import InternationalPage from './components/internationalPage/internationalPage';
+import LoginPage from './components/loginPage/loginPage';
+
 
 
 
@@ -14,22 +19,31 @@ import Contacts from './components/contacts/contacts.js'
 
 function App() {
   return (
+
     <div>
-    <NavBar className = 'text-light'></NavBar>
-    
-    <IntroCarousel></IntroCarousel>
 
-    <Story></Story>
-    <Shopping></Shopping>
+      <NavBar/>
+     <Routes>
+      <Route path='/tastings' element= {<TastingsPage/>}> </Route>
+      <Route path= '/' element = {<Home/>}> </Route>
+      <Route path= '/shopping' element = {<ShoppingPage/>}> </Route>
+      <Route path= '/contact' element = {<ContactPage/>}> </Route>
+      <Route path= '/newsletter' element = {<NewsletterPage/>}> </Route>
+      <Route path= '/story' element = {<StoryPage/>}> </Route>
+      <Route path= '/international' element = {<InternationalPage/>}> </Route>
+      <Route path= '/login' element = {<LoginPage/>}> </Route>
 
-    <Tastings></Tastings>
+
+     </Routes>
 
 
-    <Newsletter></Newsletter>
 
-    <Contacts></Contacts>
+
 
     </div>
+
+
+
     
   );
 }

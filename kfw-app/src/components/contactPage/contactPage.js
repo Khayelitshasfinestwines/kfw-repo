@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Tastings(){
+const ContactPage = ()=>{
+
     return (
         <div>
-            Tastings
+            Contact Us
         </div>
     )
 }
@@ -12,4 +13,6 @@ function Tastings(){
 
 
 
-export default Tastings
+
+
+export default ContactPage
