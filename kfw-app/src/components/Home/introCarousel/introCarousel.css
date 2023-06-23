@@ -1,20 +1,59 @@
 /* Custom previous arrow icon */
 .custom-carousel-control-prev-icon {
-    border: solid white;
+  border: solid black;
   border-width: 0 8px 8px 0;
   display: inline-block;
   padding: 8px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  }
-  
-  /* Custom next arrow icon */
-  .custom-carousel-control-next-icon {
-    border: solid white;
+}
+
+/* Custom next arrow icon */
+.custom-carousel-control-next-icon {
+  border: solid black;
   border-width: 0 8px 8px 0;
   display: inline-block;
   padding: 8px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  }
-  
+}
+
+.imagecenter {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center the images */
+}
+/* Custom max-height and max-width for the carousel images */
+.carousel-inner img {
+  max-height: 780px; /* Default max-height */
+  max-width: 80%; /* Default max-width */
+}
+
+.testtext {
+  color: black;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-content h2 {
+  color: white;
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 60px;
+}
+
+.carousel-content button {
+  font-family: 'Playfair Display', serif;
+  left: 25%;
+  display: block;
+  margin: 0 auto;
+}

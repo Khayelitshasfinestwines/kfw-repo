@@ -1,39 +1,52 @@
-import React, { useState } from 'react';
-import './introCarousel.css'
-import FirstSlideImage from './introCarouselImages/test.png';
-import SecondSlideImage from './introCarouselImages/wine.jpg';
-import ThirdSlideImage from './introCarouselImages/Lindile-Ndzaba-(11-of-13).jpg';
+import React, { useState, useEffect } from 'react';
+import './introCarousel.css';
+import FirstSlideImage from './introCarouselImages/icstoryimg.JPG';
+import SecondSlideImage from './introCarouselImages/storyic.jpg';
+import ThirdSlideImage from './introCarouselImages/testwinetastingintro.jpeg';
 
 const IntroCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? 2 : prevSlide - 1));
-  };
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
-  };
-
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
       <div className="carousel-inner">
-        <div className={`carousel-item ${currentSlide === 0 ? 'active' : ''}`}>
-          <img className="d-block w-100" src={FirstSlideImage} alt="First slide" />
+        <div className="carousel-item active">
+          <div className="imagecenter">
+            <img src={FirstSlideImage} className="d-block w-100" alt="Shop Link" />
+          </div>
+          <div className="carousel-content">
+            <h2>Taste Khayletsha's Finest</h2>
+            <button type="button" class="btn btn-dark btn-lg carousel-content-button">Shop</button>
+          </div>
         </div>
-        <div className={`carousel-item ${currentSlide === 1 ? 'active' : ''}`}>
-          <img className="d-block w-100" src={SecondSlideImage} alt="Second slide" />
+
+        <div className="carousel-item">
+          <div className="imagecenter">
+            <img src={SecondSlideImage} className="d-block w-100" alt="Story Link" />
+          </div>
+          <div className="carousel-content">
+            <h2>Discover the Passion and History Infused in Every Bottle</h2>
+            <button type="button" class="btn btn-dark btn-lg">Our Story</button>
+          </div>
         </div>
-        <div className={`carousel-item ${currentSlide === 2 ? 'active' : ''}`}>
-          <img className="d-block w-100" src={ThirdSlideImage} alt="Third slide" />
+
+        <div className="carousel-item">
+          <div className="imagecenter">
+            <img src={ThirdSlideImage} className="d-block w-100" alt="Wine Tasting Link" />
+          </div>
+          <div className="carousel-content">
+            <h2>Experience our Way with the Best Pairings</h2>
+            <button type="button" class="btn btn-dark btn-lg">Wine Tasting</button>
+          </div>
         </div>
       </div>
-      <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onClick={handlePrevSlide}>
+
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
         <span className="custom-carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onClick={handleNextSlide}>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
         <span className="custom-carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
   );
 };
