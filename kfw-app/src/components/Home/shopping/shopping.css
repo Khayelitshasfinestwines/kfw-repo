@@ -17,13 +17,11 @@
     margin-left: 10px; /* Decrease the left margin */
   }
 
-.image-container {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 0px;
+.image-container3 {
+  padding-left: 30px;
+  padding-top: 30px;
+   
+ 
   }
   
   .small-image {
@@ -33,10 +31,10 @@
   
   .image-container2 {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: right;
     padding-top: 30px;
-    padding-left: 0px;
+    padding-right: 30px;
     
   }
   
@@ -50,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .subscribebutton {
