@@ -13,7 +13,9 @@ const IntroCarousel = () => {
             <img src={FirstSlideImage} className="d-block w-100" alt="Shop Link" />
           </div>
           <div className="carousel-content">
-            <h2>Taste Khayletsha's Finest</h2>
+            <div className="first-slide-text">
+            <h2>Taste Khayletsha's Finest Here</h2>
+            </div>
             <button type="button" class="btn btn-dark btn-lg carousel-content-button">Shop</button>
           </div>
         </div>
@@ -33,7 +35,7 @@ const IntroCarousel = () => {
             <img src={ThirdSlideImage} className="d-block w-100" alt="Wine Tasting Link" />
           </div>
           <div className="carousel-content">
-            <h2>Experience our Way with the Best Pairings</h2>
+            <h2>Experience our Wine with the Best Pairings</h2>
             <button type="button" class="btn btn-dark btn-lg">Wine Tasting</button>
           </div>
         </div>

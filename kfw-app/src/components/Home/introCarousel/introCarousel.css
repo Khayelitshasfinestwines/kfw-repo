@@ -28,17 +28,13 @@
   max-width: 80%; /* Default max-width */
 }
 
-.testtext {
-  color: black;
-}
-
 .carousel-item {
   position: relative;
 }
 
 .carousel-content {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -46,14 +42,17 @@
 
 .carousel-content h2 {
   color: white;
-  font-size: 48px;
+  font-size: 5vw;
   font-family: 'Playfair Display', serif;
   margin-bottom: 60px;
 }
 
 .carousel-content button {
   font-family: 'Playfair Display', serif;
-  left: 25%;
   display: block;
   margin: 0 auto;
+  padding: 5px 5px;
+  font-size: 3vw;
+  border-radius: 5px;
+  width:40%;
 }
