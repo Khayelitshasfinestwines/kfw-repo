@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './introCarousel.css';
-import FirstSlideImage from './introCarouselImages/icstoryimg.JPG';
+import FirstSlideImage from './introCarouselImages/testshop1.JPG';
 import SecondSlideImage from './introCarouselImages/storyic.jpg';
 import ThirdSlideImage from './introCarouselImages/testwinetastingintro.jpeg';
+import {Link} from "react-router-dom"
 
 const IntroCarousel = () => {
   return (
@@ -16,7 +17,9 @@ const IntroCarousel = () => {
             <div className="first-slide-text">
             <h2>Taste Khayletsha's Finest Here</h2>
             </div>
+            <Link to = '/shopping'> 
             <button type="button" class="btn btn-dark btn-lg carousel-content-button">Shop</button>
+            </Link>
           </div>
         </div>
 
@@ -26,7 +29,9 @@ const IntroCarousel = () => {
           </div>
           <div className="carousel-content">
             <h2>Discover the Passion and History Infused in Every Bottle</h2>
+            <Link to='/story'>
             <button type="button" class="btn btn-dark btn-lg">Our Story</button>
+            </Link>
           </div>
         </div>
 
@@ -36,7 +41,9 @@ const IntroCarousel = () => {
           </div>
           <div className="carousel-content">
             <h2>Experience our Wine with the Best Pairings</h2>
+            <Link to='/tastings'>
             <button type="button" class="btn btn-dark btn-lg">Wine Tasting</button>
+            </Link>
           </div>
         </div>
       </div>
