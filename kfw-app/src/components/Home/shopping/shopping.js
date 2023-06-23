@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 
-<div className="image-container2">
+<div className="image-container3" >
   <img src={ShoppingImage} alt="Shopping Image" className="small-image" />
 </div>
 
@@ -34,7 +34,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <img src={ShoppingImage} alt="Shopping Image" className="small-image2" />
 </div>
 
-<div className='centerText'>
+<div className='centerText' style={{ paddingRight: '30px' }}>
 LOREM IPSUM GENERATOR
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 
