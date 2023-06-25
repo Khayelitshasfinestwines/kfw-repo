@@ -37,11 +37,7 @@ const Story = () => {
           </figure>
           <div className="backstory">
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "Discover the inspiring journey of Lindile Ndzaba and Khayelitsha's Finest Wine—a tale of passion, empowerment, and community upliftment. From humble beginnings to breaking barriers in the world of wine, Lindile's quest to bring fine wine culture to Khayelitsha will captivate your heart. Step into our story page to explore the remarkable impact of Khayelitsha's Finest Wine and be inspired to join us on this extraordinary adventure."
             </p>
           </div>
           <Link to="/story">
