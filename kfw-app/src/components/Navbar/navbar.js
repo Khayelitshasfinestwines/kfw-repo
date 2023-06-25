@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
 import LogoComponent from './logo/LogoComponent';
 
-const NavBar = () => {
+const NavBar = () => { 
   return (
     
     <div className='text-light fixed-nav-bar'>
