@@ -17,20 +17,21 @@
 }
 
 .backstory {
-  font-size: 20px;
+  font-size: 3vh;
   text-align: center; /* Add this line */
+  font-family: 'Playfair Display', 'serif';
 }
 
 .storybutton {
-  font-size: 20px;
-  font-family: '';
-  margin: 0 auto; /* Modify this line */
+  font-size: 5vw;
+  font-family: 'Playfair Display', 'serif';
+  margin: auto;
   display: block; /* Add this line */
 }
 
 .storyheader {
-  font-size: 90px;
-  font-family: '';
+  font-size: 5vw;
+  font-family: 'Playfair Display', 'serif';
   margin: 0 auto; /* Modify this line */
   display: block; /* Add this line */
 }
