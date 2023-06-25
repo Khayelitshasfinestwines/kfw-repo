@@ -19,7 +19,7 @@ const IntroCarousel = () => {
           </div>
           <div className="carousel-content">
             <div className="first-slide-text">
-            <h2>Taste Khayletsha's Finest Here</h2>
+            <h2>Taste Khayelitsha's Finest Here</h2>
             </div>
             <Link to = '/shopping'> 
             <button type="button" class="btn btn-dark btn-lg carousel-content-button" onClick={buttonScrollClick}>Shop</button>
