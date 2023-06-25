@@ -24,8 +24,8 @@
 }
 /* Custom max-height and max-width for the carousel images */
 .carousel-inner img {
-  max-height: 780px; /* Default max-height */
-  max-width: 80%; /* Default max-width */
+  max-height: 1020px;
+  max-width: 100%;
 }
 
 .carousel-item {
