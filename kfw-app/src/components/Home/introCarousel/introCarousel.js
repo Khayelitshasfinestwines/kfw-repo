@@ -6,6 +6,10 @@ import ThirdSlideImage from './introCarouselImages/testwinetastingintro.jpeg';
 import {Link} from "react-router-dom"
 
 const IntroCarousel = () => {
+
+  const shopButtonClick = ()=>{
+    window.scrollTo(0,0)
+  }
   return (
     <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
       <div className="carousel-inner">
@@ -18,7 +22,7 @@ const IntroCarousel = () => {
             <h2>Taste Khayletsha's Finest Here</h2>
             </div>
             <Link to = '/shopping'> 
-            <button type="button" class="btn btn-dark btn-lg carousel-content-button">Shop</button>
+            <button type="button" class="btn btn-dark btn-lg carousel-content-button" onClick={shopButtonClick}>Shop</button>
             </Link>
           </div>
         </div>
