@@ -1,46 +1,39 @@
-.container {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-  
-  .image-container {
-    position: relative;
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #ffffff;
-    text-align: center;
-    max-width: 80%;
-  }
-  
-  .header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .text {
-    font-size: 16px;
-  }
-  
-  .button {
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
+.background-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./tastingsimages/newtasting2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.imagecenter {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center the images */
+  height: 100%;
+}
+
+.tasting-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tasting-content h2 {
+  color: white;
+  font-size: 5vw;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 60px;
+}
+
+.tasting-button {
+  font-family: 'Playfair Display', serif;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 5px;
+  font-size: 3vw;
+  border-radius: 5px;
+  width: 40%;
+}
