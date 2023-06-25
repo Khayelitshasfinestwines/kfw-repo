@@ -10,10 +10,10 @@ const Tastings = () => {
         <div className="imagecenter">
           <div className="tasting-content">
             <div className="first-slide-text">
-              <h2>Experience the culture of Khayletisha with your wine with a tasting in the township itself.</h2>
+              <h2>Experience our wine while being immersed in the culture of Khayelitsha.</h2>
             </div>
             <Link to="/tasting">
-              <button type="button" className="btn btn-dark btn-lg tasting-button">Book Now</button>
+              <button type="button" className="btn btn-dark btn-lg">Book Now</button>
             </Link>
           </div>
         </div>
