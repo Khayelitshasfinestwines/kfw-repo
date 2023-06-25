@@ -5,6 +5,10 @@ import ShoppingImage2 from './shoppingImages/wineImage.jpeg'
 import {Link} from "react-router-dom"
 
 const Shopping = () => {
+
+  const buttonScrollClick = ()=>{
+    window.scrollTo(0,0)
+  }
   return (
     <div>
       <div className='shoppingFont1'>
@@ -50,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     <div className='centerText'> 
     <Link to = '/shopping'> 
-     <button type="button" class="btn btn-dark btn-lg mt-4 mb-5">Shop</button>
+     <button type="button" class="btn btn-dark btn-lg mt-4 mb-5" onClick={buttonScrollClick}>Shop</button>
      </Link>
     </div>
 
