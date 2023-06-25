@@ -23,6 +23,14 @@
     margin-left: 15rem;
 }
 
+@media (max-width: 768px) {
+    /* Adjust the margins for screens smaller than 768px */
+    .overallformcontainer {
+      margin-right: 5rem;
+      margin-left: 5rem;
+    }
+  }
+
 .subscribebutton {
     display: flex;
   justify-content: center;
