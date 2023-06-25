@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
+import LogoComponent from './logo/LogoComponent';
 
 const NavBar = () => {
   return (
-    <div className='text-light sticky-nav-bar'>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3 position-sticky">
-        <Link className="navbar-brand text-light" to="/">Logo</Link>
+    
+    <div className='text-light fixed-nav-bar'>
+      <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black">
+        <Link className="navbar-brand text-light" to="/"> <LogoComponent/></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

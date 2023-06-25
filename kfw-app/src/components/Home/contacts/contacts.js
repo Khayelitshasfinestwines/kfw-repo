@@ -3,7 +3,7 @@ import './contacts.css';
 
 const Contacts = () => {
   return (
-    <div className="rectangle">
+    <div className="rectangle contacts-color">
       <div className="leftcontainer">
         <div className="leftcontent">
           <p className="header">Contact Us</p>

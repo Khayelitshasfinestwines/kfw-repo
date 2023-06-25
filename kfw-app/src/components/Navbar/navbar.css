@@ -1,10 +1,10 @@
-.sticky-nav-bar{
-    position: sticky;
+.fixed-nav-bar{
+    position: fixed;
     top: 0px;
-    left: 10px;
-    right: 5px;
-    bottom: 5px;
-    z-index: 10;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    
 }
 
 .nav-bar-text-elements{
@@ -16,9 +16,8 @@
     margin-right: 4px
 }
 
-.icon-white{
-    color: white;
+.color-black{
+    background-color: #0C0C0C
 }
-
 
 

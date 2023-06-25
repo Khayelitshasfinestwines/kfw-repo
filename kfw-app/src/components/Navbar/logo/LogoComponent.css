@@ -1,0 +1,8 @@
+.inverted {
+    filter: invert(100%);
+  }
+
+  .sizing{
+    max-height: 75px; /* Default max-height */
+    max-width: auto;
+  }
