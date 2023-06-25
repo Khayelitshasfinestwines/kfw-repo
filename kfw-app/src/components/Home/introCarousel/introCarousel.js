@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 const IntroCarousel = () => {
 
-  const shopButtonClick = ()=>{
+  const buttonScrollClick = ()=>{
     window.scrollTo(0,0)
   }
   return (
@@ -22,7 +22,7 @@ const IntroCarousel = () => {
             <h2>Taste Khayletsha's Finest Here</h2>
             </div>
             <Link to = '/shopping'> 
-            <button type="button" class="btn btn-dark btn-lg carousel-content-button" onClick={shopButtonClick}>Shop</button>
+            <button type="button" class="btn btn-dark btn-lg carousel-content-button" onClick={buttonScrollClick}>Shop</button>
             </Link>
           </div>
         </div>
@@ -34,7 +34,7 @@ const IntroCarousel = () => {
           <div className="carousel-content">
             <h2>Discover the Passion and History Infused in Every Bottle</h2>
             <Link to='/story'>
-            <button type="button" class="btn btn-dark btn-lg">Our Story</button>
+            <button type="button" class="btn btn-dark btn-lg" onClick={buttonScrollClick}>Our Story</button>
             </Link>
           </div>
         </div>
@@ -46,7 +46,7 @@ const IntroCarousel = () => {
           <div className="carousel-content">
             <h2>Experience our Wine with the Best Pairings</h2>
             <Link to='/tastings'>
-            <button type="button" class="btn btn-dark btn-lg">Wine Tasting</button>
+            <button type="button" class="btn btn-dark btn-lg" onClick={buttonScrollClick}>Wine Tasting</button>
             </Link>
           </div>
         </div>

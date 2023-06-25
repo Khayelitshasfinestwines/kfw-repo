@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 const Shopping = () => {
 
-  const shopButtonClick = ()=>{
+  const buttonScrollClick = ()=>{
     window.scrollTo(0,0)
   }
   return (
@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     <div className='centerText'> 
     <Link to = '/shopping'> 
-     <button type="button" class="btn btn-dark btn-lg mt-4 mb-5" onClick={shopButtonClick}>Shop</button>
+     <button type="button" class="btn btn-dark btn-lg mt-4 mb-5" onClick={buttonScrollClick}>Shop</button>
      </Link>
     </div>
 
