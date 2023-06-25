@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
 import LogoComponent from './logo/LogoComponent';
+import IconComponent from './iconComponent/IconComponent';
 
 const NavBar = () => { 
+  const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
+  const loginButtonClicked = () => {
+    setIsLoginPageVisible(true)
+  }
+
   return (
     
     <div className='text-light fixed-nav-bar'>
@@ -33,7 +39,7 @@ const NavBar = () => {
               <Link className="nav-link text-light" to="/contact">Contact Us</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
-              <Link className="nav-link text-light" to="/login">Login</Link>
+              <Link className="nav-link text-light" to="/login"><IconComponent/></Link>
             </li>
           </ul>
         </div>
