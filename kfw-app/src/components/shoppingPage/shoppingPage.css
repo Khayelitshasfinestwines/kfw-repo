@@ -44,3 +44,52 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 768px) {
+    .marginTop {
+      margin-top: 20px;
+    }
+  
+    .shoppingFont1 {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+  
+    .image-container {
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 20px;
+      width: auto;
+    }
+  
+    .small-image {
+      max-width: 80%;
+      height: auto;
+    }
+  
+    .image-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+    }
+  
+    .subscribebutton {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .imageArea {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+  
+  }

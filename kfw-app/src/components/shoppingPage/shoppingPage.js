@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../Card/Card.js';
-import ShoppingImage from './cardImages/wineImage2.jpg';
+import ShoppingImage from '../';
+import ShoppingImage from '../';
 import './shoppingPage.css';
 
 const Home = () => {

@@ -63,3 +63,12 @@
     font-weight: bold;
   }
   
+  @media (max-width: 480px) {
+    .card-container {
+      max-width: 70%;
+    }
+  
+    .card-content {
+      padding: 0.5rem;
+    }
+  }
