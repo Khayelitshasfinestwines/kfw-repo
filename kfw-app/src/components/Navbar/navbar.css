@@ -32,6 +32,20 @@
     
   }
 
+.opacity{
+    opacity: 0.93;
+}
 
+.register-page {
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+  
+  .register-page.visible {
+    opacity: 1;
+    visibility: visible;
+    
+  }
 
   

@@ -1,9 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import "./loginPage.css";
 import RegisterPage from "../registerPage/register";
 
-const LoginPage = () => {
+const LoginPage = ({renderRegisterPage}) => {
+
+  const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
+
+
+  
+  
+  
+
+  const makeRegisterPage = () => {
+    setIsRegisterPageVisible(true);
+    renderRegisterPage();
+    
+  };
+  
   return (
+    <div> 
+        <div className={`register-page ${isRegisterPageVisible ? 'visible' : ''}`}>
+{isRegisterPageVisible && <RegisterPage/>}
+          </div>
     <div className="card mt-5 card-layout p-3">
       <h3 className="text-center mt-3 mb-3">Login </h3>
       <form>
@@ -51,16 +69,17 @@ const LoginPage = () => {
           </div>
         </div>
         <div className='center'>
-          <button type="button" className="btn btn-primary mt-2">
+          <button type="button" className="btn btn-dark mt-2 ">
             Sign In
           </button>
         </div>
 
         <div className='center mt-3'>
-          <button className="btn btn-link" type='button'> Don't have an account? Register Here!</button>
+          <button className="btn btn-link" type='button' onClick={makeRegisterPage}> Don't have an account? Register Here!</button>
         </div>
 
       </form>
+    </div>
     </div>
   );
 };

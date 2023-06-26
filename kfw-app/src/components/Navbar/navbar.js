@@ -7,16 +7,27 @@ import LogoComponent from './logo/LogoComponent';
 import Icon from './iconComponentFolder/IconComponent';
 import LoginPage from '../loginPage/loginPage';
 import Overlay from './overlay';
+import RegisterPage from '../registerPage/register';
 
 const NavBar = () => {
   const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
+  const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
+
 
   const loginButtonClicked = () => {
     setIsLoginPageVisible((prevState) => !prevState);
   };
 
+  const renderRegisterPage = () => {
+    setIsLoginPageVisible(false);
+    setIsRegisterPageVisible(true);
+
+  };
+
   const closeLogin = () => {
     setIsLoginPageVisible(false);
+    setIsRegisterPageVisible(false);
+
   };
 
   return (
@@ -25,9 +36,15 @@ const NavBar = () => {
     <div className='text-light fixed-nav-bar'>
             
             <div className={`login-page ${isLoginPageVisible ? 'visible' : ''}`}>
-            {isLoginPageVisible && <LoginPage />}
+            {isLoginPageVisible && <LoginPage renderRegisterPage={renderRegisterPage} />}
+          
             </div>
-      <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black">
+
+            <div className={`register-page ${isRegisterPageVisible ? 'visible' : ''}`}>
+        {isRegisterPageVisible && <RegisterPage closeLogin={closeLogin}/>}
+      </div>
+
+      <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black opacity">
         <Link className="navbar-brand text-light" to="/"> <LogoComponent/></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -63,7 +80,7 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-      <Overlay isVisible={isLoginPageVisible} onClose={closeLogin} />
+ <Overlay isVisible={isLoginPageVisible || isRegisterPageVisible} onClose={closeLogin} />
     </div>
 
   );
