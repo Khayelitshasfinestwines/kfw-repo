@@ -17,6 +17,7 @@
 .leftcontent,
 .rightcontent {
   text-align: center;
+  font-family: 'Playfair Display', 'serif';
 }
 
 .email,
@@ -24,11 +25,42 @@
   color: white;
 }
 
-.header{
+.header {
   color: white;
   font-size: 25px;
 }
 
-.contacts-color{
+.contacts-color {
   background-color: #0C0C0C;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.social-icons a:focus,
+.social-icons a:hover {
+  color: white;
+}
+
+.social-icons .instagram-icon {
+  background-color: #E1306C;
+  color: white;
+}
+
+.social-icons .facebook-icon {
+  background-color: #1877F2;
+  color: white;
 }
