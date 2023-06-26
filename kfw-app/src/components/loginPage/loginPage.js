@@ -4,9 +4,9 @@ import "./loginPage.css";
 const LoginPage = () => {
   return (
     <div className="card mt-5 card-layout p-3">
-      <h3 className="text-center mt-3">Login </h3>
+      <h3 className="text-center mt-3 mb-3">Login </h3>
       <form>
-        <div className="mb-3">
+        <div className="mb-3 ms-3 me-3">
           <label for="exampleFormControlInput1" className="form-label">
             Email address:
           </label>
@@ -17,7 +17,7 @@ const LoginPage = () => {
             placeholder=" "
           ></input>
         </div>
-        <div className="mb-3">
+        <div className="mb-3 ms-3 me-3">
           <label for="exampleFormControlInput1" className="form-label">
             Password:
           </label>
@@ -28,32 +28,37 @@ const LoginPage = () => {
             placeholder=" "
           ></input>
         </div>
-        <div class="row mb-4">
-          <div class="col d-flex justify-content-center">
-            <div class="form-check">
+        <div className="row mb-3 center">
+          <div className="col d-flex justify-content-center mb-3">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="form2Example31"
-                checked
+                
               />
-              <label class="form-check-label" for="form2Example31">
+              <label className="form-check-label" for="form2Example31">
                 {" "}
                 Remember me{" "}
               </label>
             </div>
           </div>
 
-          <div class="col">
+          <div className="col center">
             <a href="#!">Forgot password?</a>
           </div>
         </div>
-        <div>
-          <button type="button" class="btn btn-primary mt-3">
+        <div className='center'>
+          <button type="button" className="btn btn-primary mt-3">
             Sign In
           </button>
         </div>
+
+        <div className='center mt-4'>
+          <a href='register'> Don't have an account? Register Here!</a>
+        </div>
+
       </form>
     </div>
   );

@@ -1,6 +1,7 @@
 .icon-sizing{
     height: 16px;
     max-width: auto;
+    z-index: 20;
   
     
   }

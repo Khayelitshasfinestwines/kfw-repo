@@ -3,7 +3,7 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1;
+    z-index: 3;
     
 }
 
@@ -23,11 +23,15 @@
 .login-page {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, visibility 0.3s ease-in-out;
   }
   
   .login-page.visible {
     opacity: 1;
     visibility: visible;
+    
   }
 
+
+
+  

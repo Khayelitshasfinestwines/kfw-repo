@@ -3,7 +3,7 @@ import icon from './loginIcon.png';
 import './iconComponent.css';
 
 
-const IconComponent = () => {
+const Icon = () => {
   return (
     <div className="logo-container">
       <img src={icon} alt="Login" className='icon-sizing' />
@@ -11,4 +11,4 @@ const IconComponent = () => {
   );
 };
 
-export default IconComponent;
+export default Icon;

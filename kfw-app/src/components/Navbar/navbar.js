@@ -4,21 +4,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
 import LogoComponent from './logo/LogoComponent';
-import IconComponent from './iconComponent/IconComponent';
+import Icon from './iconComponentFolder/IconComponent';
 import LoginPage from '../loginPage/loginPage';
+import Overlay from './overlay';
 
-const NavBar = () => { 
+const NavBar = () => {
   const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
+
   const loginButtonClicked = () => {
-      setIsLoginPageVisible((prevState) => !prevState);
-  }
+    setIsLoginPageVisible((prevState) => !prevState);
+  };
+
+  const closeLogin = () => {
+    setIsLoginPageVisible(false);
+  };
 
   return (
     
-    
+  
     <div className='text-light fixed-nav-bar'>
+            
             <div className={`login-page ${isLoginPageVisible ? 'visible' : ''}`}>
-            <LoginPage />
+            {isLoginPageVisible && <LoginPage />}
             </div>
       <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black">
         <Link className="navbar-brand text-light" to="/"> <LogoComponent/></Link>
@@ -44,13 +51,18 @@ const NavBar = () => {
               <Link className="nav-link text-light" to="/contact">Contact Us</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
-              <button className="nav-link text-light" onClick={loginButtonClicked}><IconComponent/> </button>
+
+                <button className="nav-link text-light" onClick={loginButtonClicked}><Icon/> </button>
+
+
+              
             </li>
           </ul>
         </div>
       </nav>
-
+      <Overlay isVisible={isLoginPageVisible} onClose={closeLogin} />
     </div>
+
   );
 };
 
