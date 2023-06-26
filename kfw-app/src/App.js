@@ -11,6 +11,7 @@ import StoryPage from './components/storyPage/storyPage';
 import InternationalPage from './components/internationalPage/internationalPage';
 import LoginPage from './components/loginPage/loginPage';
 import Contacts from './components/Home/contacts/contacts';
+import { FirebaseProvider } from './firebase/firebase';
 
 
 
@@ -20,7 +21,10 @@ import Contacts from './components/Home/contacts/contacts';
 function App() {
   return (
 
+
     <div>
+
+  
 
       <NavBar/>
      <Routes>
@@ -36,9 +40,11 @@ function App() {
 
 
 
-
+ 
 
     </div>
+
+   
 
 
 

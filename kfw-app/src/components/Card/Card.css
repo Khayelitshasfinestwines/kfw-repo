@@ -65,7 +65,7 @@
   
   @media (max-width: 480px) {
     .card-container {
-      max-width: 70%;
+      max-width: 30%;
     }
   
     .card-content {

@@ -1,12 +1,16 @@
 import React from 'react';
 import Card from '../Card/Card.js';
 import ShoppingImage from './cardImages/wineImage.jpg';
-
+import ShoppingImage2 from './cardImages/wineImage2.jpg';
+import ShoppingImage3 from './cardImages/wineImage3.jpg';
 import './shoppingPage.css';
+
 
 const Home = () => {
   return (
     <div>
+
+        <div className='container'>
    
 
     
@@ -15,10 +19,9 @@ const Home = () => {
     <Card
      
      
-        title='Red Wine'
+        title='Red Blend'
         imageUrl={ShoppingImage}
-        body='LOREM IPSUM GENERATOR
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
+        body='A Blend of: SYRAH & CABERNET SAUVIGNON'
       />
 </div>
       
@@ -27,11 +30,26 @@ const Home = () => {
 
 
   
-  title='White Wine'
-  imageUrl={ShoppingImage}
-  body='LOREM IPSUM GENERATOR
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
+  title='White Blend'
+  imageUrl={ShoppingImage2}
+  body='A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON'
 />
+
+
+      </div>
+
+      <div className='image-container2'>
+      <Card
+
+
+  
+  title='Check back soon!'
+  imageUrl={ShoppingImage3}
+  body='It is a surprise'
+/>
+
+
+      </div>
 
       </div>
 
