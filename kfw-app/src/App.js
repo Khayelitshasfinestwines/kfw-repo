@@ -11,6 +11,7 @@ import StoryPage from './components/storyPage/storyPage';
 import InternationalPage from './components/internationalPage/internationalPage';
 import LoginPage from './components/loginPage/loginPage';
 import Contacts from './components/Home/contacts/contacts';
+import WineClubPage from './components/wineClubPage/wineClub';
 import { FirebaseProvider } from './firebase/firebase';
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route path= '/story' element = {<StoryPage/>}> </Route>
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
       <Route path= '/login' element = {<LoginPage/>}> </Route>
+      <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
      </Routes>
      <Contacts/>
 

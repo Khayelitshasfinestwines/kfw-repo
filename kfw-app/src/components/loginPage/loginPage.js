@@ -1,5 +1,6 @@
 import React from "react";
 import "./loginPage.css";
+import RegisterPage from "../registerPage/register";
 
 const LoginPage = () => {
   return (
@@ -50,13 +51,13 @@ const LoginPage = () => {
           </div>
         </div>
         <div className='center'>
-          <button type="button" className="btn btn-primary mt-3">
+          <button type="button" className="btn btn-primary mt-2">
             Sign In
           </button>
         </div>
 
-        <div className='center mt-4'>
-          <a href='register'> Don't have an account? Register Here!</a>
+        <div className='center mt-3'>
+          <button className="btn btn-link" type='button'> Don't have an account? Register Here!</button>
         </div>
 
       </form>
