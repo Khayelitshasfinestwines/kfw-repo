@@ -31,6 +31,8 @@ const NavBar = () => {
 
   };
 
+
+
   return (
     
   
@@ -58,6 +60,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item active nav-bar-spacing">
               <Link className="nav-link text-light" to="/wineclub">Wine Club</Link>
+            
             </li>
             <li className="nav-item active nav-bar-spacing">
               <Link className="nav-link text-light" to="/story">Our Story</Link>
