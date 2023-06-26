@@ -1,10 +1,10 @@
 import React from 'react'
 import "./register.css"
 
-const RegisterPage = ({closeLogin})=>{
+const RegisterPage = ({showLogin})=>{
 
     const regButtonClicked = () => {
-        closeLogin()
+        showLogin();
     }
 
     return (

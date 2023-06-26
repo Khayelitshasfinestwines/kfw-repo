@@ -16,6 +16,7 @@ const NavBar = () => {
 
   const loginButtonClicked = () => {
     setIsLoginPageVisible((prevState) => !prevState);
+    setIsRegisterPageVisible(false);
   };
 
   const renderRegisterPage = () => {
@@ -41,7 +42,7 @@ const NavBar = () => {
             </div>
 
             <div className={`register-page ${isRegisterPageVisible ? 'visible' : ''}`}>
-        {isRegisterPageVisible && <RegisterPage closeLogin={closeLogin}/>}
+        {isRegisterPageVisible && <RegisterPage showLogin={loginButtonClicked}/>}
       </div>
 
       <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black opacity">
