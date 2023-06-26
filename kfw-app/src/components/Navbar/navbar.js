@@ -5,16 +5,21 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
 import LogoComponent from './logo/LogoComponent';
 import IconComponent from './iconComponent/IconComponent';
+import LoginPage from '../loginPage/loginPage';
 
 const NavBar = () => { 
   const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
   const loginButtonClicked = () => {
-    setIsLoginPageVisible(true)
+      setIsLoginPageVisible((prevState) => !prevState);
   }
 
   return (
     
+    
     <div className='text-light fixed-nav-bar'>
+            <div className={`login-page ${isLoginPageVisible ? 'visible' : ''}`}>
+            <LoginPage />
+            </div>
       <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black">
         <Link className="navbar-brand text-light" to="/"> <LogoComponent/></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +44,12 @@ const NavBar = () => {
               <Link className="nav-link text-light" to="/contact">Contact Us</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
-              <Link className="nav-link text-light" to="/login"><IconComponent/></Link>
+              <button className="nav-link text-light" onClick={loginButtonClicked}><IconComponent/> </button>
             </li>
           </ul>
         </div>
       </nav>
+
     </div>
   );
 };

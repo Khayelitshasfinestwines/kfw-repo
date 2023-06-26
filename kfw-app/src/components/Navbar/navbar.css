@@ -20,4 +20,14 @@
     background-color: #0C0C0C
 }
 
+.login-page {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .login-page.visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
