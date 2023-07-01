@@ -33,7 +33,7 @@ const StoryPage = () => {
 
 <p>As we continue to grow our brand, our focus remains on expanding within the African continent and spreading our message of inclusivity and empowerment. We want everyone, regardless of their race or socioeconomic status, to feel welcome and comfortable exploring the world of wine.</p>
 
-<p>Thank you for being a part of our story. Together, we are redefining what it means to enjoy fine wines and creating a positive impact in our community. Raise a glass with us and join the movement that is Khayelitsha's Finest Wines. Cheers to a future filled with great wine, shared experiences, and the celebration of the human spirit.</p>
+<p>Thank you for being a part of our story. Together, we are redefining what it means to enjoy fine wines and creating a positive impact in our community. Raise a glass with us and join the movement that is Khayelitsha's Finest Wines. Cheers to a future filled with great wine shared experiences, and the celebration of the human spirit.</p>
 
 <p>Scan the QR code below to learn even more about us and what we stand for.</p>
         </div>
