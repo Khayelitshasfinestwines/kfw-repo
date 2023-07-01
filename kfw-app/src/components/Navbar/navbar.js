@@ -66,7 +66,7 @@ const NavBar = () => {
               <Link className="nav-link text-light" to="/story">Our Story</Link>
             </li>
             <li className="nav-item active nav-bar-spacing">
-              <Link className="nav-link text-light" to="/tastings">Wine Tastings</Link>
+              <Link className="nav-link text-light" to="/tastings">Wine Tour</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
               <Link className="nav-link text-light" to="/international">International</Link>
