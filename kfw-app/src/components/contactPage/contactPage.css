@@ -16,9 +16,74 @@
     font-size: 5vh;
     font-weight: bold;
   }
+  .caption-sub {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 3vh;
+    font-style: italic;
+  }
+  @media screen and (min-width: 1024px) {
+    .caption-sub {
+      font-size: 4vh; /* Increase the font size for larger screens */
+    }
+  }
   
   .spacing p{
     margin-top: 3.5vh;
     margin-bottom: 3.5vh;
   }
   
+  .text {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5vh;
+    
+  }
+  @media screen and (min-width: 1024px) {
+    .text {
+      font-size: 5vh; /* Increase the font size for larger screens */
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5vh;
+    margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  }
+  @media screen and (min-width: 1024px) {
+    .contact-container {
+        max-width: 500px;
+    }
+  }
+  
+  .contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .contact-row p {
+    text-align: left;
+  }
+
+  .contact-row svg {
+    margin-right: 2vh;
+  }
+
+  
+  .name {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5vh;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 1024px) {
+    .name {
+      font-size: 6vh; /* Increase the font size for larger screens */
+    }
+  }
