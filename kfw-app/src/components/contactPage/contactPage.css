@@ -87,3 +87,46 @@
       font-size: 6vh; /* Increase the font size for larger screens */
     }
   }
+
+  .contact-page-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .contact-page-icons a {
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 10vh;
+  }
+  
+  .contact-page-icons a:focus,
+  .contact-page-icons a:hover {
+    color: grey;
+  }
+  
+  .contact-page-icons .instagram-icon {
+    background-color: white;
+    color: black;
+  }
+  
+  .contact-page-icons .facebook-icon {
+    background-color: white;
+    color: black;
+  }
+  
+  .contact-page-icons .tiktok-icon {
+    background-color: white;
+    color: black;
+  }
+  
+  .contact-page-icons .twitter-icon {
+    background-color: white;
+    color: black;
+  }
+  
