@@ -29,7 +29,7 @@ const CartPage = () => {
       const snapshot = await firebase
         .firestore()
         .collection('cartItems')
-        .where('userId', '==', userId)
+        
         .get();
       const items = snapshot.docs.map((doc) => doc.data());
       setCartItems(items);
