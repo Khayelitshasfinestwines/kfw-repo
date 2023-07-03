@@ -25,7 +25,7 @@ const StoryPage = () => {
 <div className = "spacing">
 <p>Lindile's passion for wine was ignited during his time in the hospitality industry, where he witnessed the stark difference in the quality of wines served in the shebeens and taverns of Khayelitsha. He recognized the need to bring exceptional wines to his community, challenging the perception that fine wines were exclusive to certain areas or individuals. Inspired by his background and driven by a desire to uplift his community, Khayelitsha's Finest Wines was born.</p>
 
-<p>From the outset, our goal has been to democratize the wine culture and make it accessible to all. We collaborate directly with winemakers and vineyards, including esteemed partners such as The Fledge & Company and Saxenburg Wine Estate, to create small batches of high-quality wines. Lindile himself is involved in the blending and creation process, ensuring that every bottle of Khayelitsha's Finest Wines represents the essence of our brand. </p>
+<p>From the outset, our goal has been to democratize the wine culture and make it accessible to all. We collaborate directly with winemakers and vineyards, including esteemed partners such as Saxenburg Wine Estate, to create premium high-quality wines. Lindile himself is involved in the blending and creation process, ensuring that every bottle of Khayelitsha's Finest Wines represents the essence of our brand. </p>
 
 <p>Beyond our commitment to producing exceptional wines, we are passionate about making a difference in Khayelitsha. We run several feeding schemes, working to alleviate food insecurity and provide support to those in need. Additionally, we have established a tasting room that will not only introduce tourists to our community but also challenge stereotypes and showcase the beauty that lies within Khayelitsha.</p>
 
@@ -33,7 +33,7 @@ const StoryPage = () => {
 
 <p>As we continue to grow our brand, our focus remains on expanding within the African continent and spreading our message of inclusivity and empowerment. We want everyone, regardless of their race or socioeconomic status, to feel welcome and comfortable exploring the world of wine.</p>
 
-<p>Thank you for being a part of our story. Together, we are redefining what it means to enjoy fine wines and creating a positive impact in our community. Raise a glass with us and join the movement that is Khayelitsha's Finest Wines. Cheers to a future filled with great wine, shared experiences, and the celebration of the human spirit.</p>
+<p>Thank you for being a part of our story. Together, we are redefining what it means to enjoy fine wines and creating a positive impact in our community. Raise a glass with us and join the movement that is Khayelitsha's Finest Wines. Cheers to a future filled with great wine shared experiences, and the celebration of the human spirit.</p>
 
 <p>Scan the QR code below to learn even more about us and what we stand for.</p>
         </div>

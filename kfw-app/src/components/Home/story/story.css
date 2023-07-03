@@ -10,7 +10,7 @@
   text-align: center; /* Add this line */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .twocolumns > * {
     width: 50%;
   }

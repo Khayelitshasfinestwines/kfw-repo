@@ -12,6 +12,7 @@ import InternationalPage from './components/internationalPage/internationalPage'
 import LoginPage from './components/loginPage/loginPage';
 import Contacts from './components/Home/contacts/contacts';
 import WineClubPage from './components/wineClubPage/wineClub';
+import RedWine from './components/shoppingPage/redWine/redWine';
 import { FirebaseProvider } from './firebase/firebase';
 
 
@@ -37,6 +38,7 @@ function App() {
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
       <Route path= '/login' element = {<LoginPage/>}> </Route>
       <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
+      <Route path= '/redwine' element = {<RedWine/>}> </Route>
      </Routes>
      <Contacts/>
 

@@ -15,11 +15,11 @@ const TastingsPage = ()=>{
                 />
                     </div>
 
-                <div className="centered">Wine Tastings</div>
+                <div className="centered">Wine Tours</div>
         </div>
 
         <div className='text-center mt-3 tasting-blurb'>
-            Wine Tastings (explanation)
+            Wine Tours (explanation)
         </div>
 
         <div className='button-center'>

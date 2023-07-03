@@ -2,6 +2,8 @@ import React from 'react';
 import './contacts.css';
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
+import { BsTiktok } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
 
 const Contacts = () => {
   return (
@@ -23,6 +25,12 @@ const Contacts = () => {
             </a>
             <a href="https://www.instagram.com/khayelitshasfinestwines" className="btn btn-primary btn-lg instagram-icon">
               <BsInstagram></BsInstagram>
+            </a>
+            <a href="https://www.tiktok.com/@khayelitshasfinestwines" className="btn btn-primary btn-lg tiktok-icon">
+              <BsTiktok></BsTiktok>
+            </a>
+            <a href="https://twitter.com/khayelitshawine" className="btn btn-primary btn-lg twitter-icon">
+              <BsTwitter></BsTwitter>
             </a>
           </div>
         </div>
