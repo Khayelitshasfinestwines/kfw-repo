@@ -2,29 +2,35 @@ import React, { useState, useEffect } from 'react';
 import { firebase } from '../../firebase/firebase';
 import CartItem from './cartitem';
 import './cartPage.css';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        setUser(user);
-        fetchCartItems(user.uid);
-      } else {
-        setUser(null);
-        const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        setCartItems(storedCartItems);
-      }
-    });
-
-    return () => unsubscribe();
+    const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    setCartItems(storedCartItems);
+  
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = uuidv4();
+      localStorage.setItem('userId', userId);
+    }
+  
+    setUser({ uid: userId });
+    fetchCartItems(userId);
   }, []);
+  
 
   const fetchCartItems = async (userId) => {
     try {
-      const snapshot = await firebase.firestore().collection('cartItems').where('userId', '==', userId).get();
+      const snapshot = await firebase
+        .firestore()
+        .collection('cartItems')
+        .where('userId', '==', userId)
+        .get();
       const items = snapshot.docs.map((doc) => doc.data());
       setCartItems(items);
     } catch (error) {
@@ -52,13 +58,20 @@ const CartPage = () => {
   const removeFromCart = async (item) => {
     if (user) {
       try {
-        const snapshot = await firebase.firestore().collection('cartItems').where('userId', '==', user.uid).where('title', '==', item.title).get();
+        const snapshot = await firebase
+          .firestore()
+          .collection('cartItems')
+          .where('userId', '==', user.uid)
+          .where('title', '==', item.title)
+          .get();
         snapshot.docs.forEach((doc) => doc.ref.delete());
       } catch (error) {
         console.log('Error removing item from cart:', error);
       }
     } else {
-      const updatedCartItems = cartItems.filter((cartItem) => cartItem.title !== item.title);
+      const updatedCartItems = cartItems.filter(
+        (cartItem) => cartItem.title !== item.title
+      );
       setCartItems(updatedCartItems);
       localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
     }
