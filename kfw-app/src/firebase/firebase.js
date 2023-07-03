@@ -1,4 +1,5 @@
-import firebase from 'firebase/compat/app'; // Update import statement
+import firebase from 'firebase/compat/app';
+// Update import statement
 
 // Import other Firebase services using the compat syntax
 import 'firebase/compat/auth';
@@ -14,6 +15,8 @@ const firebaseConfig = {
   appId: "1:180202285491:web:32a85811ac03218b4903c6",
   measurementId: "G-RJYRJSSLB3"
 };
+
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

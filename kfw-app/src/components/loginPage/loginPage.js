@@ -2,9 +2,12 @@ import React, {useState} from "react";
 import "./loginPage.css";
 import RegisterPage from "../registerPage/register";
 
+
 const LoginPage = ({renderRegisterPage}) => {
 
   const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
+
+
 
 
   
@@ -16,6 +19,13 @@ const LoginPage = ({renderRegisterPage}) => {
     renderRegisterPage();
     
   };
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function onLoginSubmit(e) {
+    e.preventDefault();
+  }
   
   return (
     <div> 
@@ -24,12 +34,15 @@ const LoginPage = ({renderRegisterPage}) => {
           </div>
     <div className="card mt-5 card-layout p-3">
       <h3 className="text-center mt-3 mb-3">Login </h3>
-      <form>
+
+      <form onSubmit={onLoginSubmit}>
         <div className="mb-3 ms-3 me-3">
           <label for="exampleFormControlInput1" className="form-label">
             Email address:
           </label>
           <input
+            value = {email}
+            onChange={(e)=>setEmail(e.target.value)}
             type="email"
             className="form-control"
             id="exampleFormControlInput1"
@@ -40,8 +53,10 @@ const LoginPage = ({renderRegisterPage}) => {
           <label for="exampleFormControlInput1" className="form-label">
             Password:
           </label>
-          <input
-            type="email"
+          <input           
+           value = {password}
+            onChange={(e)=>setPassword(e.target.value)}
+            type="password"
             className="form-control"
             id="exampleFormControlInput1"
             placeholder=" "
@@ -69,7 +84,7 @@ const LoginPage = ({renderRegisterPage}) => {
           </div>
         </div>
         <div className='center'>
-          <button type="button" className="btn btn-dark mt-2 ">
+          <button type="button" className="btn btn-dark mt-2" onClick = {onLoginSubmit}>
             Sign In
           </button>
         </div>
