@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './navbar.css';
 import LogoComponent from './logo/LogoComponent';
 import Icon from './iconComponentFolder/IconComponent';
+import { BsFillCartFill } from 'react-icons/bs';
 import LoginPage from '../loginPage/loginPage';
 import Overlay from './overlay';
 import RegisterPage from '../registerPage/register';
@@ -74,12 +75,14 @@ const NavBar = () => {
             <li className="nav-item nav-bar-spacing">
               <Link className="nav-link text-light" to="/contact">Contact Us</Link>
             </li>
+
             <li className="nav-item nav-bar-spacing">
+              <Link className = "nav-link text-light" to ="/cart">
+                <button className=" btn nav-link text-light"><BsFillCartFill/> </button></Link>
+            </li>
 
+            <li className="nav-item nav-bar-spacing">
                 <button className="nav-link text-light" onClick={loginButtonClicked}><Icon/> </button>
-
-
-              
             </li>
           </ul>
         </div>
