@@ -1,0 +1,32 @@
+/* cartPage.css */
+
+/* ...existing styles... */
+
+.counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .counter-button:hover {
+    background-color: #999;
+  }
+  
+  .counter-value {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

@@ -9,6 +9,7 @@ import ShoppingPage from './components/shoppingPage/shoppingPage';
 import ContactPage from './components/contactPage/contactPage';
 import StoryPage from './components/storyPage/storyPage';
 import InternationalPage from './components/internationalPage/internationalPage';
+import CartPage from './components/cartPage/cartPage';
 import LoginPage from './components/loginPage/loginPage';
 import Contacts from './components/Home/contacts/contacts';
 import WineClubPage from './components/wineClubPage/wineClub';
@@ -36,6 +37,7 @@ function App() {
       <Route path= '/contact' element = {<ContactPage/>}> </Route>
       <Route path= '/story' element = {<StoryPage/>}> </Route>
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
+      <Route path = '/cart' element = {<CartPage></CartPage>}></Route>
       <Route path= '/login' element = {<LoginPage/>}> </Route>
       <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
       <Route path= '/redwine' element = {<RedWine/>}> </Route>
