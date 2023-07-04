@@ -92,6 +92,12 @@
   padding: 20px;
 }
 
+
+.image-card-text-heading {
+  color: #000;
+  font-size: 5vw;
+}
+
 .coming-soon-overlay {
   position: absolute;
   top: 0;
@@ -106,4 +112,3 @@
   font-size: 20px;
   opacity: 1;
 }
-

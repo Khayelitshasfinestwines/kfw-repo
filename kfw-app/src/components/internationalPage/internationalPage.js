@@ -1,6 +1,5 @@
 import React from 'react'
 import './internationalPage.css';
-import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import InternationalImage from './internationalPageImages/international4.jpg';
 

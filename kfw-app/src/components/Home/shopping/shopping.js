@@ -27,7 +27,7 @@ const Shopping = () => {
               <img src={ShoppingImage} alt='Shopping Image' className='small-image' />
               <div className='image-card-back'>
                 <div className='image-card-text'>
-                  A Blend of: SYRAH & CABERNET SAUVIGNON
+                  RED BLEND: Our signature mix of Syrah and Cabernet Sauvignon
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const Shopping = () => {
               <img src={ShoppingImage2} alt='Shopping Image' className='small-image2' />
               <div className='image-card-back'>
                 <div className='image-card-text'>
-                  A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON
+                  WHITE BLEND: A perfect combination of Chenin Blanc, Sauvignon Blanc and Sèmillon
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Shopping = () => {
               <div className='image-card-back'>
                 <div className='image-card-text'>
                   <div className='coming-soon-overlay'>
-                    Coming Soon!
+                    New Products Coming Soon!
                   </div>
                 </div>
               </div>
