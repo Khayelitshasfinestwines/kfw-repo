@@ -17,7 +17,7 @@ const RedWine = () => {
         const itemId = uuidv4(); // Generate a unique itemId using uuid
         const item = {
           itemId: itemId,
-          name: 'Red Blend',
+          name: 'White Blend',
           price: 220,
           quantity: 1,
           userId: anonymousUserId // Use the anonymous user ID as the userId
