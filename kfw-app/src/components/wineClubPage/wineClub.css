@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
   }
 
 
 .wine-club-blurb {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 3vh;
 
   }
 
@@ -28,6 +29,7 @@
     font-family: 'Playfair Display', serif;
     color: white;
   };
+
 
 
 

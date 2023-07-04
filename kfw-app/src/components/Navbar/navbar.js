@@ -10,7 +10,13 @@ import LoginPage from '../loginPage/loginPage';
 import Overlay from './overlay';
 import RegisterPage from '../registerPage/register';
 
+
 const NavBar = () => {
+
+  const buttonScrollClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
   const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
 
@@ -48,15 +54,18 @@ const NavBar = () => {
         {isRegisterPageVisible && <RegisterPage showLogin={loginButtonClicked}/>}
       </div>
 
-      <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black opacity">
+      <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black opacity" onClick={buttonScrollClick}>
+       
         <Link className="navbar-brand text-light" to="/"> <LogoComponent/></Link>
+
+        
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse nav-bar-text-elements" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto text-light">
-            <li className="nav-item active nav-bar-spacing">
+            <li className="nav-item active nav-bar-spacing" >
               <Link className="nav-link text-light" to="/shopping">Shop</Link>
             </li>
             <li className="nav-item active nav-bar-spacing">
@@ -69,16 +78,16 @@ const NavBar = () => {
             <li className="nav-item active nav-bar-spacing">
               <Link className="nav-link text-light" to="/tastings">Wine Tour</Link>
             </li>
-            <li className="nav-item nav-bar-spacing">
+            <li className="nav-item nav-bar-spacing" >
               <Link className="nav-link text-light" to="/international">International</Link>
             </li>
             <li className="nav-item nav-bar-spacing">
               <Link className="nav-link text-light" to="/contact">Contact Us</Link>
             </li>
 
-            <li className="nav-item nav-bar-spacing">
-              <Link className = "nav-link text-light" to ="/cart">
-                <button className=" btn nav-link text-light"><BsFillCartFill/> </button></Link>
+            <li className="nav-item nav-bar-spacing" >
+              <Link className = "nav-link text-light" to ="/cart"><BsFillCartFill/>
+                </Link>
             </li>
 
             <li className="nav-item nav-bar-spacing">

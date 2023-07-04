@@ -20,9 +20,9 @@ const WineClubPage = () => {
             Our Wine Club provides you with the best access to our product, with exclusive offers and promotions, you will be able to gain a deeper understanding of our wines, while engaging with our entire community.
         </div>
 
-        <div className='button-center'>
+        <div className='button-center '>
 
-                <button className='btn btn-dark mt-3 mb-3'>Purchase Membership</button>
+                <button className='btn btn-dark mt-3 mb-3 '>Purchase Membership</button>
 
 
         </div>

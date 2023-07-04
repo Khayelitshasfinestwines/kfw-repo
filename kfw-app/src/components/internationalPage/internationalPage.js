@@ -6,7 +6,7 @@ const InternationalPage = ()=>{
     return (
         <div>
             <div className="heading-container">
-                <img src={InternationalImage} alt="story header" style={{ width: '100%' }} />
+                <img src={InternationalImage} alt="international header" style={{ width: '100%' }} />
                 <div className="centered">International</div>
             </div>
 
