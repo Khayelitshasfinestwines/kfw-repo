@@ -3,35 +3,44 @@ import './redWine.css';
 import StoryImage from './redwineImages/storyimage1.jpg';
 import { Link } from 'react-router-dom';
 import { firebase } from '../../../firebase/firebase';
+import { v4 as uuidv4 } from 'uuid';
 
 const RedWine = () => {
-    const addToCart = async () => {
-        try {
-          const user = firebase.auth().currentUser;
-          const userId = user ? user.uid : null;
-      
-          if (user && user.isAnonymous) {
-            // If the user is anonymous, use the anonymous user ID as the userId
-            const anonymousUserId = firebase.auth().currentUser.uid;
-            const item = {
-              name: 'Red Blend',
-              price: 220,
-              userId: anonymousUserId // Use the anonymous user ID as the userId
-            };
-            await firebase.firestore().collection('cartItems').add(item);
-          } else {
-            // If the user is authenticated or not anonymous, add the item without the userId
-            const item = {
-              name: 'Red Blend',
-              price: 220
-            };
-            await firebase.firestore().collection('cartItems').add(item);
-          }
-        } catch (error) {
-          console.log('Error adding item to cart:', error);
-        }
-      };
-      
+  const addToCart = async () => {
+    try {
+      const user = firebase.auth().currentUser;
+      const userId = user ? user.uid : null;
+
+      if (user && user.isAnonymous) {
+        // If the user is anonymous, use the anonymous user ID as the userId
+        const anonymousUserId = firebase.auth().currentUser.uid;
+        const itemId = uuidv4(); // Generate a unique itemId using uuid
+        const item = {
+          itemId: itemId,
+          name: 'Red Blend',
+          price: 220,
+          quantity: 1,
+          userId: anonymousUserId // Use the anonymous user ID as the userId
+        };
+        await firebase.firestore().collection('cartItems').doc(itemId).set(item);
+      } else {
+        // If the user is authenticated or not anonymous, add the item without the userId
+        const itemId = uuidv4(); // Generate a unique itemId using uuid
+        const item = {
+          itemId: itemId,
+          name: 'Red Blend',
+          price: 220
+        };
+        await firebase.firestore().collection('cartItems').doc(itemId).set(item);
+      }
+    } catch (error) {
+      console.log('Error adding item to cart:', error);
+    }
+  };
+      //DON'T TOUCH ANYTHING ABOVE!!!!!
+
+
+
   return (
     <>
       <div className="container2">

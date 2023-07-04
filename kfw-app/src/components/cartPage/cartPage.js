@@ -7,8 +7,10 @@ import { v4 as uuidv4 } from 'uuid';
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Fetch cart items and user on component mount
     firebase.auth().onAuthStateChanged((currentUser) => {
       if (currentUser) {
         setUser(currentUser);
@@ -26,6 +28,8 @@ const CartPage = () => {
 
   const fetchCartItems = async (userId) => {
     try {
+      setIsLoading(true);
+
       const snapshot = await firebase
         .firestore()
         .collection('cartItems')
@@ -33,59 +37,56 @@ const CartPage = () => {
         .get();
       const items = snapshot.docs.map((doc) => doc.data());
       setCartItems(items);
+      setIsLoading(false);
     } catch (error) {
       console.log('Error fetching cart items:', error);
+      setIsLoading(false);
     }
   };
-  
-
-  const addToCart = async (item) => {
-    if (user) {
-      try {
-        await firebase.firestore().collection('cartItems').add({
-          userId: user.uid,
-          ...item,
-        });
-        fetchCartItems(user.uid); // Fetch updated cart items
-      } catch (error) {
-        console.log('Error adding item to cart:', error);
-      }
-    } else {
-      firebase
-        .auth()
-        .signInAnonymously()
-        .then((response) => {
-          const { user } = response;
-          setUser(user);
-          fetchCartItems(user.uid);
-          addToCart(item); // Retry adding the item after signing in anonymously
-        })
-        .catch((error) => {
-          console.log('Error signing in anonymously:', error);
-        });
-    }
-  };
-  
 
   const removeFromCart = async (item) => {
     if (user) {
       try {
-        const snapshot = await firebase
-          .firestore()
-          .collection('cartItems')
-          .where('userId', '==', user.uid)
-          .where('title', '==', item.title)
-          .get();
-        snapshot.docs.forEach((doc) => doc.ref.delete());
-        fetchCartItems(user.uid); // Fetch updated cart items
+        await firebase.firestore().collection('cartItems').doc(item.itemId).delete();
+        fetchCartItems(user.uid);
       } catch (error) {
         console.log('Error removing item from cart:', error);
       }
     }
   };
 
+  const increaseQuantity = async (item) => {
+    if (user) {
+      try {
+        await firebase
+          .firestore()
+          .collection('cartItems')
+          .doc(item.itemId)
+          .update({ quantity: item.quantity + 1 });
+        fetchCartItems(user.uid);
+      } catch (error) {
+        console.log('Error increasing item quantity:', error);
+      }
+    }
+  };
+
+  const decreaseQuantity = async (item) => {
+    if (user && item.quantity > 1) {
+      try {
+        await firebase
+          .firestore()
+          .collection('cartItems')
+          .doc(item.itemId)
+          .update({ quantity: item.quantity - 1 });
+        fetchCartItems(user.uid);
+      } catch (error) {
+        console.log('Error decreasing item quantity:', error);
+      }
+    }
+  };
+
   const calculateTotal = () => {
-    const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
+    const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
     return totalPrice.toFixed(2);
   };
 
@@ -93,12 +94,20 @@ const CartPage = () => {
     <div className="cart-container">
       <h1>Cart</h1>
 
-      {cartItems.length === 0 ? (
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
         <div>
           {cartItems.map((item) => (
-            <CartItem key={item.title} item={item} removeFromCart={removeFromCart} />
+            <CartItem
+              key={item.itemId}
+              item={item}
+              removeFromCart={removeFromCart}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
           ))}
 
           <div className="total-price">

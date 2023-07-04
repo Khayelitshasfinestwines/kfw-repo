@@ -15,7 +15,7 @@ const Home = () => {
             <Link to="/redwine">
               <Card
                 title='Red Blend'
-                imageUrl={ShoppingImage}
+                imageUrl={ShoppingImage2}
                 body='A Blend of: SYRAH & CABERNET SAUVIGNON'
               />
             </Link>
@@ -23,7 +23,7 @@ const Home = () => {
           <div className='image-container2'>
             <Card
               title='White Blend'
-              imageUrl={ShoppingImage2}
+              imageUrl={ShoppingImage}
               body='A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON'
             />
           </div>
