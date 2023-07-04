@@ -20,12 +20,17 @@ const Home = () => {
               />
             </Link>
           </div>
+          
           <div className='image-container2'>
+          <Link to="/whitewine">
             <Card
               title='White Blend'
               imageUrl={ShoppingImage}
               body='A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON'
             />
+            </Link>
+
+            
           </div>
           <div className='image-container2'>
             <Card
