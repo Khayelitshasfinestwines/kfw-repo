@@ -39,7 +39,7 @@ const NavBar = () => {
     <div className='text-light fixed-nav-bar'>
             
             <div className={`login-page ${isLoginPageVisible ? 'visible' : ''}`}>
-            {isLoginPageVisible && <LoginPage renderRegisterPage={renderRegisterPage} />}
+            {isLoginPageVisible && <LoginPage renderRegisterPage={renderRegisterPage} closeLogin={closeLogin}/>}
           
             </div>
 

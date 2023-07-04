@@ -1,9 +1,12 @@
 import React, {useState} from "react";
 import "./loginPage.css";
 import RegisterPage from "../registerPage/register";
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
+import { auth } from '../../firebase/firebase';
 
 
-const LoginPage = ({renderRegisterPage}) => {
+const LoginPage = ({renderRegisterPage, closeLogin}) => {
 
   const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
 
@@ -23,8 +26,18 @@ const LoginPage = ({renderRegisterPage}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function onLoginSubmit(e) {
+  async function onLoginSubmit(e) {
     e.preventDefault();
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      closeLogin();
+      
+
+    } catch (err) {
+
+      alert(err.message);
+    }
+
   }
   
   return (

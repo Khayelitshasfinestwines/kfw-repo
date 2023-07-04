@@ -96,17 +96,6 @@ const RegisterPage = ({showLogin})=>{
           ></input>
 
         </div>
-        <div className="mb-3 ms-3 me-3">
-          <label for="exampleFormControlInput5" className="form-label">
-            Confirm Password:
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="exampleFormControlInput5"
-            placeholder=" "
-          ></input>
-        </div>
 
         <div className='center'>
           <button type="submit" className="btn btn-dark mt-2 " onClick={onRegisterSubmit}>
