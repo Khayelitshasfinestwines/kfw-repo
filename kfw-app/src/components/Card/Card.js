@@ -4,6 +4,8 @@ import'./Card.css'
 
 function Card({ title, imageUrl, body }) {
     return (
+
+      
       <div className='card-container'>
         <div className='image-container'>
           <img src={imageUrl} alt="Shopping Image " />
@@ -20,10 +22,10 @@ function Card({ title, imageUrl, body }) {
         </div>
   
         <div className='btn'>
-          <button>
-            
-            <a href='#'>Add to Cart</a>
-          </button>
+        <button type="button" className="btn btn-dark btn-lg mt-4 mb-5" >
+          Add to Cart
+        </button>
+        
         </div>
       </div>
     );
