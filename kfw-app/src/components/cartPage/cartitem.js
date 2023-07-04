@@ -1,14 +1,14 @@
 import React from 'react';
 
-
-const CartItem = ({ item, removeFromCart }) => {
+const CartItem = ({ item, removeFromCart, userId }) => {
   return (
     <div className="cart-item">
       <img src={item.imageUrl} alt={item.title} />
       <div className="item-details">
         <h3>{item.title}</h3>
         <p>{item.body}</p>
-        <p>${item.price.toFixed(2)}</p>
+        <p>ZAR {item.price.toFixed(2)}</p>
+       
       </div>
       <button type="button" className="btn btn-danger" onClick={() => removeFromCart(item)}>
         Remove
@@ -16,7 +16,5 @@ const CartItem = ({ item, removeFromCart }) => {
     </div>
   );
 };
-
-
 
 export default CartItem;

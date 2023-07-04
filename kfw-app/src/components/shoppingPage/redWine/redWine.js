@@ -5,19 +5,33 @@ import { Link } from 'react-router-dom';
 import { firebase } from '../../../firebase/firebase';
 
 const RedWine = () => {
-  const addToCart = async () => {
-    try {
-      const item = {
-        name: 'Red Blend',
-        price: 220,
+    const addToCart = async () => {
+        try {
+          const user = firebase.auth().currentUser;
+          const userId = user ? user.uid : null;
+      
+          if (user && user.isAnonymous) {
+            // If the user is anonymous, use the anonymous user ID as the userId
+            const anonymousUserId = firebase.auth().currentUser.uid;
+            const item = {
+              name: 'Red Blend',
+              price: 220,
+              userId: anonymousUserId // Use the anonymous user ID as the userId
+            };
+            await firebase.firestore().collection('cartItems').add(item);
+          } else {
+            // If the user is authenticated or not anonymous, add the item without the userId
+            const item = {
+              name: 'Red Blend',
+              price: 220
+            };
+            await firebase.firestore().collection('cartItems').add(item);
+          }
+        } catch (error) {
+          console.log('Error adding item to cart:', error);
+        }
       };
-
-      await firebase.firestore().collection('cartItems').add(item);
-    } catch (error) {
-      console.log('Error adding item to cart:', error);
-    }
-  };
-
+      
   return (
     <>
       <div className="container2">
