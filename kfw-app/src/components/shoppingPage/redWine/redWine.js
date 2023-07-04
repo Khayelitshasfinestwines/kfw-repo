@@ -61,10 +61,10 @@ Red Blend
 
           <br />
           <br />
-          <p><em>The Saxenburg Select Shiraz 2015 is an incredible expression of Shiraz and a true showcase of the heights the variety can reach on Saxenburg soils. An impressive nose showing cranberry, black pepper, blueberries and a hint of dried herbs. The palate is beautifully focused and tight, bringing balance to the incredible structure and dense tannins. The oak is beautifully integrated and this wine develops wonderfully with time in the glass – revealing more of its beauty and complexity over time.</em></p>
+          <p><em>Khayelitsa's Red Blend is an extraordinary wine that captures the essence of the renowned Khayelitsa vineyards, skillfully blending different grape varieties to create a symphony of flavors. With a captivating bouquet, it unfolds a mesmerizing array of aromas, including luscious ripe cherries, vibrant blackcurrants, delicate hints of exotic spices, and a subtle touch of earthiness. On the palate, it showcases impeccable balance and finesse, seamlessly marrying its robust structure with velvety tannins that caress the senses. The integration of oak is executed with artistry, adding a gentle nuance and enhancing the wine's overall character without overpowering its inherent charm. </em></p>
         <hr/>
 
-        <p><em>These extraordinary wines, have been stored and matured under optimal conditions in our Vinotéque, for you to get the very best out of your fine wine experience.</em></p>
+        <p><em>These extraordinary wines, have been stored and matured under optimal conditions , for you to get the very best out of your fine wine experience.</em></p>
         <div className="centerText">
         <button type="button" className="btn btn-dark btn-lg mt-4 mb-5" onClick={addToCart}>
           Add to Cart

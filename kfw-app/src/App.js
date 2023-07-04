@@ -14,6 +14,7 @@ import LoginPage from './components/loginPage/loginPage';
 import Contacts from './components/Home/contacts/contacts';
 import WineClubPage from './components/wineClubPage/wineClub';
 import RedWine from './components/shoppingPage/redWine/redWine';
+import WhiteWine from './components/shoppingPage/whiteWine/whiteWine';
 import { FirebaseProvider } from './firebase/firebase';
 
 
@@ -41,6 +42,7 @@ function App() {
       <Route path= '/login' element = {<LoginPage/>}> </Route>
       <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
       <Route path= '/redwine' element = {<RedWine/>}> </Route>
+      <Route path= '/whitewine' element = {<WhiteWine/>}> </Route>
      </Routes>
      <Contacts/>
 

@@ -6,7 +6,7 @@ const CartItem = ({ item, removeFromCart, increaseQuantity, decreaseQuantity }) 
     switch (itemName) {
       case 'Red Blend':
         return require('../../components/Home/shopping/shoppingImages/wineImage2.jpg');
-      case 'wine2':
+      case 'White Blend':
         return require('../../components/Home/shopping/shoppingImages/wineImage.jpg');
       
       default:

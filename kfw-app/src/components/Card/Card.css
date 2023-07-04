@@ -42,18 +42,15 @@
     justify-content: center;
   }
   
-  .btn button {
-    padding: 0.5rem;
-    background-color: white;
-    border: none;
-    transition: 0.2s;
-    margin-bottom: 0.5rem;
-    border-radius: 3px;
-  }
+
   
-  .btn button:hover {
-    background: rgba(27, 156, 252, 0.1);
-    transform: scale(1.0);
+  .btn {
+
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   a {

@@ -1,11 +1,11 @@
 import React from 'react';
-import './redWine.css';
-import StoryImage from './redwineImages/storyimage1.jpg';
+import './whiteWine.css';
+import StoryImage from './whitewineImages/storyimage1.jpg';
 import { Link } from 'react-router-dom';
 import { firebase } from '../../../firebase/firebase';
 import { v4 as uuidv4 } from 'uuid';
 
-const RedWine = () => {
+const WhiteWine = () => {
   const addToCart = async () => {
     try {
       const user = firebase.auth().currentUser;
@@ -28,7 +28,7 @@ const RedWine = () => {
         const itemId = uuidv4(); // Generate a unique itemId using uuid
         const item = {
           itemId: itemId,
-          name: 'Red Blend',
+          name: 'White Blend',
           price: 220
         };
         await firebase.firestore().collection('cartItems').doc(itemId).set(item);
@@ -52,7 +52,7 @@ const RedWine = () => {
 
         <div className="column2" >
         <h3>
-Red Blend
+White Blend
   
 </h3>
 <p class="lead">
@@ -61,7 +61,7 @@ Red Blend
 
           <br />
           <br />
-          <p><em>The Saxenburg Select Shiraz 2015 is an incredible expression of Shiraz and a true showcase of the heights the variety can reach on Saxenburg soils. An impressive nose showing cranberry, black pepper, blueberries and a hint of dried herbs. The palate is beautifully focused and tight, bringing balance to the incredible structure and dense tannins. The oak is beautifully integrated and this wine develops wonderfully with time in the glass – revealing more of its beauty and complexity over time.</em></p>
+          <p><em>Khayelitsa's White Blend is an enchanting wine that showcases the artful blending of different white grape varieties sourced from the esteemed Khayelitsa vineyards. With its alluring aromas, it delights the senses with notes of tropical fruits, citrus blossoms, and a touch of honeyed sweetness. The palate is a harmonious balance of vibrant flavors, where juicy pineapple, ripe peach, and zesty lemon intertwine with subtle hints of floral undertones. The wine's refreshing acidity adds a lively zest, while its silky texture provides a pleasing mouthfeel. Crafted with finesse, the oak influence is delicately integrated, enhancing the wine's complexity without overpowering its inherent elegance.</em></p>
         <hr/>
 
         <p><em>These extraordinary wines, have been stored and matured under optimal conditions in our Vinotéque, for you to get the very best out of your fine wine experience.</em></p>
@@ -78,4 +78,4 @@ Red Blend
   );
 };
 
-export default RedWine;
+export default WhiteWine;
