@@ -49,8 +49,6 @@ const IntroCarousel = () => {
             <button type="button" class="btn btn-dark btn-lg" onClick={buttonScrollClick}>Contact Us</button>
             </Link>
 
-
-
             {/*
             <h2>Experience our Wine with the Best Pairings</h2>
             <Link to='/tastings'>
