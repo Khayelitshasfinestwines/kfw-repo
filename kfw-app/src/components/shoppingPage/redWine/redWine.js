@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import './redWine.css';
 import StoryImage from './redwineImages/storyimage1.jpg';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,8 @@ import { firebase } from '../../../firebase/firebase';
 import { v4 as uuidv4 } from 'uuid';
 
 const RedWine = () => {
+  const [addedToCart, setAddedToCart] = React.useState(false);
+
   const addToCart = async () => {
     try {
       const user = firebase.auth().currentUser;
@@ -18,7 +20,7 @@ const RedWine = () => {
         const item = {
           itemId: itemId,
           name: 'Red Blend',
-          price: 220,
+          price: 150,
           quantity: 1,
           userId: anonymousUserId // Use the anonymous user ID as the userId
         };
@@ -33,17 +35,35 @@ const RedWine = () => {
         };
         await firebase.firestore().collection('cartItems').doc(itemId).set(item);
       }
+      setAddedToCart(true);
     } catch (error) {
       console.log('Error adding item to cart:', error);
     }
   };
       //DON'T TOUCH ANYTHING ABOVE!!!!!
 
-
+      useEffect(() => {
+        if (addedToCart) {
+          window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of the screen
+        }
+      }, [addedToCart]);
 
   return (
 
     <div>
+
+{addedToCart && ( // New code for confirmation message
+        <div className="confirmationMessage mt-5">
+          <p className = "confirmationText">Your item has been added to the cart.</p>
+          <Link to="/cart">
+            <button type="button" className="btn btn-dark btn-lg mt-4 confirmationbutton">
+              Proceed to Checkout
+            </button>
+          </Link>
+        </div>
+      )}
+
+
       <div className="twocolumns">
           <div className = "column1">
             <img src={StoryImage} alt="Story Image" />
