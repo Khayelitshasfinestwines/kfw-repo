@@ -1,11 +1,11 @@
 import React from 'react';
-import './redWine.css';
-import StoryImage from './redwineImages/storyimage1.jpg';
+import './whiteWine.css';
+import StoryImage from './whitewineImages/whitewine.jpg';
 import { Link } from 'react-router-dom';
 import { firebase } from '../../../firebase/firebase';
 import { v4 as uuidv4 } from 'uuid';
 
-const RedWine = () => {
+const WhiteWine = () => {
   const addToCart = async () => {
     try {
       const user = firebase.auth().currentUser;
@@ -42,6 +42,28 @@ const RedWine = () => {
 
 
   return (
+    <div>
+      <div className="twocolumns">
+          <div className = "column1">
+            <img src={StoryImage} alt="Story Image" />
+          </div>
+
+          <div>
+            <p><em>The Saxenburg Select Shiraz 2015 is an incredible expression of Shiraz and a true showcase of the heights the variety can reach on Saxenburg soils. An impressive nose showing cranberry, black pepper, blueberries and a hint of dried herbs. The palate is beautifully focused and tight, bringing balance to the incredible structure and dense tannins. The oak is beautifully integrated and this wine develops wonderfully with time in the glass – revealing more of its beauty and complexity over time.</em></p>
+            <hr/>
+
+            <p><em>These extraordinary wines, have been stored and matured under optimal conditions in our Vinotéque, for you to get the very best out of your fine wine experience.</em></p>
+            <div className="centerText">
+              <button type="button" className="btn btn-dark btn-lg mt-4 mb-5" onClick={addToCart}>
+                Add to Cart
+              </button>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+  /*
     <>
       <div className="container2">
         <div className="column1">
@@ -75,7 +97,8 @@ Red Blend
 
    
     </>
+    */
   );
 };
 
-export default RedWine;
+export default WhiteWine;

@@ -1,8 +1,8 @@
 import React from 'react';
 import './shopping.css';
-import ShoppingImage from './shoppingImages/wineImage2.jpg';
-import ShoppingImage2 from './shoppingImages/wineImage.jpg';
-import ShoppingImage3 from './shoppingImages/wineImage3.jpg';
+import ShoppingImage from './shoppingImages/wineImage2NEW.jpg';
+import ShoppingImage2 from './shoppingImages/wineImageNEW.jpg';
+import ShoppingImage3 from './shoppingImages/wineImage3NEW.jpg';
 import { Link } from 'react-router-dom';
 
 const Shopping = () => {
@@ -18,7 +18,7 @@ const Shopping = () => {
         </div>
        
         <div className='centerText'>
-         Wines we have available! We have a surprise third wine coming soon. 
+         Wines we have available! We have a new product coming soon, stay tuned for future updates. 
         </div>
 
         <div className='imageArea'>
@@ -27,8 +27,11 @@ const Shopping = () => {
               <img src={ShoppingImage} alt='Shopping Image' className='small-image' />
               <div className='image-card-back'>
                 <div className='image-card-text'>
-                  A Blend of: SYRAH & CABERNET SAUVIGNON
+                  RED BLEND: Our signature mix of Syrah and Cabernet Sauvignon
                 </div>
+              </div>
+              <div className='image-card-text-bottom'>
+                RED BLEND
               </div>
             </div>
           </div>
@@ -38,8 +41,11 @@ const Shopping = () => {
               <img src={ShoppingImage2} alt='Shopping Image' className='small-image2' />
               <div className='image-card-back'>
                 <div className='image-card-text'>
-                  A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON
+                  WHITE BLEND: A perfect combination of Chenin Blanc, Sauvignon Blanc and Sèmillon
                 </div>
+              </div>
+              <div className='image-card-text-bottom'>
+                WHITE BLEND
               </div>
             </div>
           </div>
@@ -50,9 +56,12 @@ const Shopping = () => {
               <div className='image-card-back'>
                 <div className='image-card-text'>
                   <div className='coming-soon-overlay'>
-                    Coming Soon!
+                    New Products Coming Soon!
                   </div>
                 </div>
+              </div>
+              <div className='image-card-text-bottom'>
+                COMING SOON
               </div>
             </div>
           </div>
