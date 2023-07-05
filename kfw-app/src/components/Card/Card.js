@@ -10,15 +10,17 @@ function Card({ title, imageUrl, body, addToCart }) {
     setAddedToCart(true);
   };
 
-  const linkUrl = `/${title.toLowerCase().replace(/\s/g, '')}`; // Generate dynamic link based on the card's title
+  const linkUrl = title.toLowerCase().replace(/\s/g, '') !== 'checkbacksoon!' ? `/${title.toLowerCase().replace(/\s/g, '')}` : null;
 
   return (
     <div className="card-container">
       <div className="image-container">
-        {linkUrl && (
+        {linkUrl && title.toLowerCase().replace(/\s/g, '') !== 'checkbacksoon' ? (
           <Link to={linkUrl}>
             <img src={imageUrl} alt="Shopping Image" /> 
           </Link>
+        ) : (
+          <img src={imageUrl} alt="Shopping Image" />
         )}
       </div>
 
