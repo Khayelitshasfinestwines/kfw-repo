@@ -70,6 +70,7 @@ const RedWine = () => {
           </div>
 
           <div>
+          <h1 className='wine-title mb-5'>Red Blend </h1>
             <p><em>Khayelitsa's Red Blend is an extraordinary wine that captures the essence of the renowned Khayelitsa vineyards, skillfully blending different grape varieties to create a symphony of flavors. With a captivating bouquet, it unfolds a mesmerizing array of aromas, including luscious ripe cherries, vibrant blackcurrants, delicate hints of exotic spices, and a subtle touch of earthiness. On the palate, it showcases impeccable balance and finesse, seamlessly marrying its robust structure with velvety tannins that caress the senses. The integration of oak is executed with artistry, adding a gentle nuance and enhancing the wine's overall character without overpowering its inherent charm. As you indulge in this wine and allow it to breathe, it gradually unveils a complex tapestry of flavors, offering layers of intrigue and delight with every sip. </em></p>
             <hr/>
 

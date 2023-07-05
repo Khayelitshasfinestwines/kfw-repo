@@ -70,6 +70,7 @@ const WhiteWine = () => {
           </div>
 
           <div>
+            <h1 className='wine-title mb-5'>White Blend </h1>
             <p><em>Khayelitsa's White Blend is an enchanting wine that showcases the artful blending of different white grape varieties sourced from the esteemed Khayelitsa vineyards. With its alluring aromas, it delights the senses with notes of tropical fruits, citrus blossoms, and a touch of honeyed sweetness. The palate is a harmonious balance of vibrant flavors, where juicy pineapple, ripe peach, and zesty lemon intertwine with subtle hints of floral undertones. The wine's refreshing acidity adds a lively zest, while its silky texture provides a pleasing mouthfeel. Crafted with finesse, the oak influence is delicately integrated, enhancing the wine's complexity without overpowering its inherent elegance. </em></p>
             <hr/>
 
