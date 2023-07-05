@@ -37,7 +37,7 @@ function App() {
    
       <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
      <Routes>
-      <Route path='/tastings' element= {<TastingsPage/>}> </Route>
+      {/* <Route path='/tastings' element= {<TastingsPage/>}> </Route> */}
       <Route path= '/' element = {<Home/>}> </Route>
       <Route path= '/shopping' element = {<ShoppingPage/>}> </Route>
       <Route path= '/contact' element = {<ContactPage/>}> </Route>
@@ -46,9 +46,7 @@ function App() {
       <Route path = '/cart' element = {<CartPage></CartPage>}></Route>
       <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
       <Route path= '/redwine' element = {<RedWine/>}> </Route>
-
-      <Route path= '/profile' element = {<ProfilePage/>}>
-      </Route>
+      {/* <Route path= '/profile' element = {<ProfilePage/>}></Route> */}
      </Routes>
      <Contacts/>
    
