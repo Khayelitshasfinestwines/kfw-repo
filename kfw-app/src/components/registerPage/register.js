@@ -27,7 +27,6 @@ const RegisterPage = ({showLogin})=>{
       catch (err) { 
       alert(err.message)
       }
-
       
     }
 

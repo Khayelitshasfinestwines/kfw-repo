@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -9,9 +9,12 @@ import { BsFillCartFill } from 'react-icons/bs';
 import LoginPage from '../loginPage/loginPage';
 import Overlay from './overlay';
 import RegisterPage from '../registerPage/register';
+import { auth } from '../../firebase/firebase';
 
 
-const NavBar = () => {
+
+
+const NavBar = ({isLoggedIn, setIsLoggedIn}) => {
 
   const buttonScrollClick = () => {
     window.scrollTo(0, 0);
@@ -19,6 +22,8 @@ const NavBar = () => {
 
   const [isLoginPageVisible, setIsLoginPageVisible] = useState(false);
   const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
+  
+  // const [displayName, setDisplayName] = useState('');
 
 
   const loginButtonClicked = () => {
@@ -39,6 +44,27 @@ const NavBar = () => {
   };
 
 
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        // User is signed in
+        setCurrentUser(user);
+      } else {
+        // User is signed out
+        setCurrentUser(null);
+      }
+    });
+
+    return () => {
+      // Unsubscribe when the component unmounts
+      unsubscribe();
+    };
+  }, []);
+
+  const displayName = currentUser ? currentUser.displayName : '';
+
 
   return (
     
@@ -46,12 +72,12 @@ const NavBar = () => {
     <div className='text-light fixed-nav-bar'>
             
             <div className={`login-page ${isLoginPageVisible ? 'visible' : ''}`}>
-            {isLoginPageVisible && <LoginPage renderRegisterPage={renderRegisterPage} closeLogin={closeLogin}/>}
+            {isLoginPageVisible && <LoginPage renderRegisterPage={renderRegisterPage} closeLogin={closeLogin} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>}
           
             </div>
 
             <div className={`register-page ${isRegisterPageVisible ? 'visible' : ''}`}>
-        {isRegisterPageVisible && <RegisterPage showLogin={loginButtonClicked}/>}
+        {isRegisterPageVisible && <RegisterPage showLogin={loginButtonClicked} />}
       </div>
 
       <nav className="navbar navbar-expand-lg navbar-dark p-3 position-sticky color-black opacity" onClick={buttonScrollClick}>
@@ -94,7 +120,13 @@ const NavBar = () => {
             </li>
 
             <li className="nav-item nav-bar-spacing">
-                <button className="nav-link text-light" onClick={loginButtonClicked}><Icon/> </button>
+              {isLoggedIn ? (
+                <Link className="nav-link text-light" to="/profile">Welcome, {displayName}</Link>
+              ) : (
+                <button className="nav-link text-light" onClick={loginButtonClicked}> <Icon/> </button>
+              )
+            }
+                
             </li>
           </ul>
         </div>
