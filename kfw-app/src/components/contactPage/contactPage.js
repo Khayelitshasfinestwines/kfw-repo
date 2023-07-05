@@ -1,6 +1,6 @@
 import React from 'react';
 import './contactPage.css';
-import ContactPageImage from './contactPageImages/contactpageimage1.jpg';
+import ContactPageImage from './contactPageImages/contactNEW2.JPG';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
@@ -20,23 +20,22 @@ const ContactPage = () => {
       <div className="container-page">
         <div className="text-page">
           <div className="spacing-page">
-            <p>If you have any questions about our products or are interested in booking a wine tour, please use the contact below:</p>
+            <p>If you have any questions about our products or want to learn more about us, please use the contact below:</p>
             </div>
             <div className="contact-container-page">
-              <div className="contact-row name-page">
+              <div className="contact-row-page name-page">
                 <p>Lindile Ndzaba</p>
-              </div>
-              <div className="contact-row-page">
-                <BsFillEnvelopeFill />
-                <p>lindilendzaba@gmail.com</p>
               </div>
               <div className="contact-row-page">
                 <BsFillTelephoneFill />
                 <p>+27 73 081 3691</p>
               </div>
+              <div className="contact-row-page">
+                <p>lindilendzaba@gmail.com</p>
+              </div>
           </div>
           <p className="caption-page mt-5">Connect With Us</p>
-          <p className="caption-sub-page">Explore our Wine Journey on Social Media</p>
+          <p className="caption-sub-page mb-4">Explore our Wine Journey on Social Media</p>
 
           <div className="contact-page-icons-page mb-5">
             <a href="https://www.facebook.com/KhayelitshasFinestWines/" className="facebook-icon">

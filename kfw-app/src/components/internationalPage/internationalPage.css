@@ -5,22 +5,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Playfair-Display", "seriff";
 }
 
-.heading-container {
+.heading-container-int {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.container {
+.container-int {
   position: relative;
   text-align: center;
   color: black;
 }
 
-.centered {
+.centered-int {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,68 +30,57 @@ body {
   color: white;
 }
 
-.text {
+.text-int {
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-.spacing p {
+.spacing-int p {
   margin: 1rem 0;
 }
 
-.caption {
+.caption-int {
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.caption-sub {
+.caption-sub-int {
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-style: italic;
 }
 
-.contact-container {
+.contact-container-int {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center horizontally and vertically */
   margin-top: 1.5rem;
 }
 
-.contact-row {
+.contact-row-int {
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center; /* Center horizontally */
   margin-bottom: 1rem;
 }
 
-.contact-row p {
+.contact-row-int p {
   margin-left: 0.5rem;
 }
 
-.contact-row svg {
+.contact-row-int svg {
   margin-right: 0.5rem;
 }
 
-.name {
+.name-int {
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
   font-weight: bold;
-}
-
-.fressa-regular {
-  font-family: 'Fressa', Arial, sans-serif;
-  font-weight: normal;
-  /* Add any other desired styling properties */
-}
-
-.addington-cf-thin {
-  font-family: 'Addington CF Thin', Arial, sans-serif;
-  font-weight: normal;
-  /* Add any other desired styling properties */
 }
