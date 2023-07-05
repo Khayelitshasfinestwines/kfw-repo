@@ -6,30 +6,30 @@ import InternationalImage from './internationalPageImages/international4.jpg';
 const InternationalPage = () => {
   return (
     <div>
-      <div className="heading-container">
-        <img src={InternationalImage} alt="international header" style={{ width: '100%' }} />
+      <div className="heading-container-int">
+        <img src={InternationalImage} alt="international header-int" style={{ width: '100%' }} />
         <div className="centered">International</div>
       </div>
 
-      <div className="container">
-        <div className="text">
-          <div className="spacing">
-            <p className="addington-cf-thin">For those interested in our product that live overseas, please contact our partner for information on how we can bring our wine to you:</p>
-            <p className="addington-cf-thin">United States Contacts:</p>
+      <div className="container-int">
+        <div className="text-int">
+          <div className="spacing-int">
+            <p className="addington-cf-thin-int">For those interested in our product that live overseas, please contact our partner for information on how we can bring our wine to you:</p>
+            <p className="addington-cf-thin-int">United States Contacts:</p>
           </div>
 
-          <div className="contact-container mb-5">
-            <div className="contact-row name">
-              <p className="addington-cf-thin">Daniel Levitt</p>
+          <div className="contact-container-int mb-5">
+            <div className="contact-row-int name-int">
+              <p className="addington-cf-thin-int">Daniel Levitt</p>
             </div>
     
-            <div className="contact-row">
+            <div className="contact-row-int">
               <BsFillTelephoneFill />
-              <p className="fressa-regular">+27 82 785 8731</p>
+              <p>+27 82 785 8731</p>
             </div>
             
-            <div className="contact-row">
-              <p className="addington-cf-thin">daniel@southernyardimporting.com</p>
+            <div className="contact-row-int">
+              <p>daniel@southernyardimporting.com</p>
             </div>
           </div>
         </div>
