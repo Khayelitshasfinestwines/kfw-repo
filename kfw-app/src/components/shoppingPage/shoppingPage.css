@@ -15,20 +15,19 @@
 
 .image-container {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 0px;
     padding-bottom: 30px;
-    max-width: 70%;
+    width: 70%;
   }
 
   .image-container2 {
     display: flex;
     justify-content: right;
     align-items: right;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -48,3 +47,20 @@
     margin-right: auto;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bottom-card{
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  
+}
