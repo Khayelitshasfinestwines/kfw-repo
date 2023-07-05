@@ -13,7 +13,7 @@ function Card({ title, imageUrl, body, addToCart }) {
   const linkUrl = title.toLowerCase().replace(/\s/g, '') !== 'checkbacksoon!' ? `/${title.toLowerCase().replace(/\s/g, '')}` : null;
 
   return (
-    <div className="card-container">
+    <div className="card-container-card">
       <div className="image-container">
         {linkUrl && title.toLowerCase().replace(/\s/g, '') !== 'checkbacksoon' ? (
           <Link to={linkUrl}>
@@ -24,8 +24,8 @@ function Card({ title, imageUrl, body, addToCart }) {
         )}
       </div>
 
-      <div className="card-content">
-        <div className="card-title mt-5">
+      <div className="card-content-card">
+        <div className="card-title-card mt-5">
           <h3>{title}</h3>
         </div>
         <div className="card-body">

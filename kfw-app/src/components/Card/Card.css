@@ -1,4 +1,4 @@
-.card-container {
+.card-container-card {
     width: 30rem;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
@@ -23,7 +23,7 @@
   
   }
   
-  .card-content {
+  .card-content-card {
     margin: 1rem;
     margin-top: 0.3rem;
   }
@@ -35,7 +35,7 @@
     color: black;
   }
   
-  .card-title {
+  .card-title-card {
     margin-bottom: 0.5rem;
     color: black;
   }
