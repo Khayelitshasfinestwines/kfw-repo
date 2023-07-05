@@ -5,7 +5,7 @@ import './iconComponent.css';
 
 const Icon = () => {
   return (
-    <div className="logo-container">
+    <div >
       <img src={icon} alt="Login" className='icon-sizing' />
     </div>
   );

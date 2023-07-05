@@ -11,7 +11,9 @@ const Home = ()=>{
         <IntroCarousel/>
         <Story/>
         <Shopping/>
+        {/*
         <Tastings/>
+        */}
         <Newsletter/>
        </div>
     )

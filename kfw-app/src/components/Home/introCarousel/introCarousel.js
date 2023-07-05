@@ -44,10 +44,17 @@ const IntroCarousel = () => {
             <img src={ThirdSlideImage} className="d-block w-100" alt="Wine Tasting Link" />
           </div>
           <div className="carousel-content">
+          <h2>Reach out to learn more about the finest</h2>
+            <Link to='/contact'>
+            <button type="button" class="btn btn-dark btn-lg" onClick={buttonScrollClick}>Contact Us</button>
+            </Link>
+
+            {/*
             <h2>Experience our Wine with the Best Pairings</h2>
             <Link to='/tastings'>
             <button type="button" class="btn btn-dark btn-lg" onClick={buttonScrollClick}>Wine Tour</button>
             </Link>
+            */}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import './LogoComponent.css';
 
 const LogoComponent = () => {
   return (
-    <div className="logo-container">
+    <div >
       <img src={logo} alt="Logo" className="inverted sizing" />
     </div>
   );

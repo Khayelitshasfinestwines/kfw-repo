@@ -11,18 +11,18 @@ const WineClubPage = () => {
                 <img
                     src={wineClubImage}
                     alt="Wine Club header"
-                    style={{ width: "100%" }}
+                    style={{ width: "100%"}}
                 />
                 <div className="centered">Wine Club</div>
         </div>
 
         <div className='text-center mt-3 wine-club-blurb'>
-            Want to join our wine club for exclusive offers and promotions? (????), sign up here to gain the best access to Khayelisha's Finest Wines
+            Our Wine Club provides you with the best access to our product, with exclusive offers and promotions, you will be able to gain a deeper understanding of our wines, while engaging with our entire community.
         </div>
 
-        <div className='button-center'>
+        <div className='button-center '>
 
-                <button className='btn btn-dark mt-3 mb-3'>Purchase Membership</button>
+                <button className='btn btn-dark mt-3 mb-3 '>Purchase Membership</button>
 
 
         </div>
