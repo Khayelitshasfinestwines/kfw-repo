@@ -20,7 +20,7 @@ const InternationalPage = () => {
 
           <div className="contact-container-int mb-5">
             <div className="contact-row-int name-int">
-              <p className="addington-cf-thin-int">Daniel Levitt</p>
+              <p>Daniel Levitt</p>
             </div>
     
             <div className="contact-row-int">

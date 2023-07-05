@@ -23,7 +23,7 @@ const ContactPage = () => {
             <p>If you have any questions about our products or want to learn more about us, please use the contact below:</p>
             </div>
             <div className="contact-container-page">
-              <div className="contact-row name-page">
+              <div className="contact-row-page name-page">
                 <p>Lindile Ndzaba</p>
               </div>
               <div className="contact-row-page">
@@ -35,7 +35,7 @@ const ContactPage = () => {
               </div>
           </div>
           <p className="caption-page mt-5">Connect With Us</p>
-          <p className="caption-sub-page">Explore our Wine Journey on Social Media</p>
+          <p className="caption-sub-page mb-4">Explore our Wine Journey on Social Media</p>
 
           <div className="contact-page-icons-page mb-5">
             <a href="https://www.facebook.com/KhayelitshasFinestWines/" className="facebook-icon">
