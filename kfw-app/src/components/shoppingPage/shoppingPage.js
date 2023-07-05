@@ -47,9 +47,9 @@ const Home = () => {
         <div className='imageArea'>
           <div className='row'>
             <div className='column'>
-              <div className='image-container'>
+              <div className='image-container mb-5 mt-5 me-5 ms-5' >
                 <Link to>
-                  <Card
+                  <Card 
                     title='Red Blend'
                     imageUrl={ShoppingImage2}
                     body='A Blend of: SYRAH & CABERNET SAUVIGNON'
@@ -65,7 +65,7 @@ const Home = () => {
               </div>
             </div>
             <div className='column'>
-              <div className='image-container'>
+              <div className='image-container mb-5 mt-5 me-5 ms-5'>
                 <Link to>
                   <Card
                     title='White Blend'
@@ -83,7 +83,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='image-container bottom-card'>
+          {/* <div className='image-container bottom-card'>
             <Card
               title='Check back soon!'
               imageUrl={ShoppingImage3}
@@ -96,11 +96,8 @@ const Home = () => {
                 })
               }
             />
-          </div>
+          </div> */}
         </div>
-      </div>
-      <div className='centerText'>
-        <Link className="btn btn-dark btn-lg mt-4 mb-5" to="/cart" >Check Out</Link>
       </div>
     </div>
   );

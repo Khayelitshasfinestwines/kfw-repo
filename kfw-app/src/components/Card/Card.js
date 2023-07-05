@@ -25,7 +25,7 @@ function Card({ title, imageUrl, body, addToCart }) {
       </div>
 
       <div className="card-content">
-        <div className="card-title">
+        <div className="card-title mt-5">
           <h3>{title}</h3>
         </div>
         <div className="card-body">
