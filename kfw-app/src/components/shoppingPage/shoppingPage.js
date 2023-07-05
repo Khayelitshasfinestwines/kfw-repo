@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Card from '../Card/Card.js';
 import ShoppingImage from './cardImages/wineImage.jpg';
 import ShoppingImage2 from './cardImages/wineImage2.jpg';
-import ShoppingImage3 from './cardImages/wineImage3.jpg';
+import ShoppingImage3 from './cardImages/comingsoonNEW3Shopping.jpg';
 import './shoppingPage.css';
 import BackgroundImage from './shopImage.png'
 
