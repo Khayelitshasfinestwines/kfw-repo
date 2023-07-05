@@ -34,10 +34,12 @@
 
 .image-container2-home {
   display: flex;
-  justify-content: space-between;
-  align-items: right;
+  justify-content: center; /* Change to center alignment */
+  align-items: center; /* Change to center alignment */
   padding-top: 30px;
   padding-right: 30px;
+  flex-basis: 100%; /* Change to full width for small screens */
+  max-width: 400px; /* Limit the width for larger screens */
 }
 
 .small-image2 {
@@ -51,6 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .image-card {
@@ -90,6 +93,7 @@
 .image-card-text {
   color: #000; 
   padding: 20px;
+  font-family: "Playfair Display", "seriff";
 }
 
 .image-card-text-bottom {
