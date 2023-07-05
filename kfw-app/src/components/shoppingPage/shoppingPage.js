@@ -16,15 +16,15 @@ const Home = () => {
       const userId = user ? user.uid : null;
 
       if (user && user.isAnonymous) {
-        // If the user is anonymous, use the anonymous user ID as the userId
+      
         const anonymousUserId = firebase.auth().currentUser.uid;
-        const itemId = uuidv4(); // Generate a unique itemId using uuid
+        const itemId = uuidv4(); 
         const item = {
           itemId: itemId,
           name: 'White Blend',
           price: 220,
           quantity: 1,
-          userId: anonymousUserId // Use the anonymous user ID as the userId
+          userId: anonymousUserId 
         };
         await firebase.firestore().collection('cartItems').doc(itemId).set(item);
       } else {

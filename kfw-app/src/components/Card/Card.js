@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
 function Card({ title, imageUrl, body, addToCart }) {
   const [addedToCart, setAddedToCart] = useState(false);
@@ -9,10 +10,16 @@ function Card({ title, imageUrl, body, addToCart }) {
     setAddedToCart(true);
   };
 
+  const linkUrl = `/${title.toLowerCase().replace(/\s/g, '')}`; // Generate dynamic link based on the card's title
+
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={imageUrl} alt="Shopping Image" />
+        {linkUrl && (
+          <Link to={linkUrl}>
+            <img src={imageUrl} alt="Shopping Image" /> 
+          </Link>
+        )}
       </div>
 
       <div className="card-content">

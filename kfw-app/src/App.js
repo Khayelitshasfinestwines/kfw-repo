@@ -46,7 +46,8 @@ function App() {
       <Route path= '/international' element = {<InternationalPage/>}> </Route>
       <Route path = '/cart' element = {<CartPage></CartPage>}></Route>
       <Route path= '/wineclub' element = {<WineClubPage/>}> </Route>
-      <Route path= '/redwine' element = {<RedWine/>}> </Route>
+      <Route path= '/redblend' element = {<RedWine/>}> </Route>
+      <Route path= '/whiteblend' element = {<WhiteWine/>}> </Route>
       {/* <Route path= '/profile' element = {<ProfilePage/>}></Route> */}
      </Routes>
      <Contacts/>

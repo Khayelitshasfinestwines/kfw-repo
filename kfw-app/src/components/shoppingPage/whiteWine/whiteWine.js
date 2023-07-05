@@ -22,6 +22,7 @@ const WhiteWine = () => {
           quantity: 1,
           userId: anonymousUserId // Use the anonymous user ID as the userId
         };
+        
         await firebase.firestore().collection('cartItems').doc(itemId).set(item);
       } else {
         // If the user is authenticated or not anonymous, add the item without the userId
@@ -49,7 +50,7 @@ const WhiteWine = () => {
           </div>
 
           <div>
-            <p><em>The Saxenburg Select Shiraz 2015 is an incredible expression of Shiraz and a true showcase of the heights the variety can reach on Saxenburg soils. An impressive nose showing cranberry, black pepper, blueberries and a hint of dried herbs. The palate is beautifully focused and tight, bringing balance to the incredible structure and dense tannins. The oak is beautifully integrated and this wine develops wonderfully with time in the glass – revealing more of its beauty and complexity over time.</em></p>
+            <p><em>Khayelitsa's White Blend is an enchanting wine that showcases the artful blending of different white grape varieties sourced from the esteemed Khayelitsa vineyards. With its alluring aromas, it delights the senses with notes of tropical fruits, citrus blossoms, and a touch of honeyed sweetness. The palate is a harmonious balance of vibrant flavors, where juicy pineapple, ripe peach, and zesty lemon intertwine with subtle hints of floral undertones. The wine's refreshing acidity adds a lively zest, while its silky texture provides a pleasing mouthfeel. Crafted with finesse, the oak influence is delicately integrated, enhancing the wine's complexity without overpowering its inherent elegance. </em></p>
             <hr/>
 
             <p><em>These extraordinary wines, have been stored and matured under optimal conditions in our Vinotéque, for you to get the very best out of your fine wine experience.</em></p>
