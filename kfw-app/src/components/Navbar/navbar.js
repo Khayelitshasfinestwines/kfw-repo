@@ -119,7 +119,7 @@ const NavBar = ({isLoggedIn, setIsLoggedIn}) => {
                 </Link>
             </li>
 
-            <li className="nav-item nav-bar-spacing">
+            {/* <li className="nav-item nav-bar-spacing">
               {isLoggedIn ? (
                 <Link className="nav-link text-light" to="/profile">Welcome, {displayName}</Link>
               ) : (
@@ -127,7 +127,7 @@ const NavBar = ({isLoggedIn, setIsLoggedIn}) => {
               )
             }
                 
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

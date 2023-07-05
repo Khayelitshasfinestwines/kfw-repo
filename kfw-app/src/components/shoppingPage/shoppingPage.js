@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       <div className='centerText'>
-        <button type="button" className="btn btn-dark btn-lg mt-4 mb-5">Check Out</button>
+        <Link className="btn btn-dark btn-lg mt-4 mb-5" to="/cart" >Check Out</Link>
       </div>
     </div>
   );
