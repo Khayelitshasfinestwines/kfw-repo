@@ -32,7 +32,7 @@
   border-radius: 16px;
 }
 
-.image-container2 {
+.image-container2-home {
   display: flex;
   justify-content: space-between;
   align-items: right;
@@ -47,7 +47,7 @@
   border-radius: 8px;
 }
 
-.imageArea {
+.imageArea-home {
   display: flex;
   justify-content: center;
   align-items: center;

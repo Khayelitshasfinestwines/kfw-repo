@@ -21,8 +21,8 @@ const Shopping = () => {
          Wines we have available! We have a new product coming soon, stay tuned for future updates. 
         </div>
 
-        <div className='imageArea'>
-          <div className='image-container2'>
+        <div className='imageArea-home'>
+          <div className='image-container2-home'>
             <div className='image-card'>
               <img src={ShoppingImage} alt='Shopping Image' className='small-image' />
               <div className='image-card-back'>
@@ -36,7 +36,7 @@ const Shopping = () => {
             </div>
           </div>
 
-          <div className='image-container2'>
+          <div className='image-container2-home'>
             <div className='image-card'>
               <img src={ShoppingImage2} alt='Shopping Image' className='small-image2' />
               <div className='image-card-back'>
@@ -50,7 +50,7 @@ const Shopping = () => {
             </div>
           </div>
 
-          <div className='image-container2'>
+          <div className='image-container2-home'>
             <div className='image-card'>
               <img src={ShoppingImage3} alt='Shopping Image' className='small-image' />
               <div className='image-card-back'>
