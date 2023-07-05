@@ -10,6 +10,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { firebase } from '../../firebase/firebase';
 
 const Home = () => {
+
+
   const addToCart = async (item) => {
     try {
       const user = firebase.auth().currentUser;
@@ -47,39 +49,36 @@ const Home = () => {
         <div className='imageArea'>
           <div className='row'>
             <div className='column'>
-              <div className='image-container mb-5 mt-5 me-5 ms-5' >
-                <Link to>
+              <div className='image-container-shopping mb-5 mt-5 me-5 ms-5' >
+
                   <Card 
                     title='Red Blend'
                     imageUrl={ShoppingImage2}
                     body='A Blend of: SYRAH & CABERNET SAUVIGNON'
-                    addToCart={() =>
-                      addToCart({
-                        name: 'Red Blend',
-                        price: 200,
-                        quantity: 1
-                      })
-                    }
+                    wineBlend = '/redblend'
+                    // addToCart={() =>
+                    //   addToCart({
+                    //     name: 'Red Blend',
+                    //     price: 200,
+                    //     quantity: 1
+                    //   })
+                    // }
                   />
-                </Link>
+
               </div>
             </div>
             <div className='column'>
-              <div className='image-container mb-5 mt-5 me-5 ms-5'>
-                <Link to>
+              <div className='image-container-shopping mb-5 mt-5 me-5 ms-5'>
+
                   <Card
                     title='White Blend'
                     imageUrl={ShoppingImage}
                     body='A Blend of: CHENIN BLANC, SAUVIGNON BLANC & SÉMILLON'
-                    addToCart={() =>
-                      addToCart({
-                        name: 'White Blend',
-                        price: 220,
-                        quantity: 1
-                      })
-                    }
+                    wineBlend='/whiteblend'
+                    
                   />
-                </Link>
+
+
               </div>
             </div>
           </div>

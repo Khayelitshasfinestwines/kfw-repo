@@ -37,3 +37,8 @@
 .btn:hover {
   
 }
+
+.wine-title{
+  font-family: "Playfair-Display", "seriff";
+  font-size: 3em;
+}
