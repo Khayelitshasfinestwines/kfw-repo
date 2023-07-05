@@ -20,9 +20,9 @@ function Card({ title, imageUrl, body, addToCart, wineBlend }) {
     <div className="card-container-card">
       <div className="image-container">
         {linkUrl && title.toLowerCase().replace(/\s/g, '') !== 'checkbacksoon' ? (
-          <Link to={linkUrl}>
+
             <img src={imageUrl} alt="Shopping Image" /> 
-          </Link>
+
         ) : (
           <img src={imageUrl} alt="Shopping Image" />
         )}
