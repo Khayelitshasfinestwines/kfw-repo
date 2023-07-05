@@ -1,9 +1,8 @@
 import React from 'react';
-import './storyPage.css';
 import StoryPageImage from './storyPageImages/storypage2.jpg';
 import StoryPageImage2 from './storyPageImages/lindileshot.jpeg';
 import QRCode from './storyPageImages/StoryQR.jpg';
-
+import './storyPage.css';
 const StoryPage = () => {
   return (
     <div>
@@ -14,7 +13,7 @@ const StoryPage = () => {
 
       <div className="container">
 
-        <div className="text">
+        <div className="story-page-text">
           <div className = "spacing">
           <p>Welcome to Khayelitsha's Finest Wines! We are a home-grown brand that has captured the hearts of wine enthusiasts worldwide, and we're excited to share our journey with you. Founded in 2018 by Lindile Ndzaba, a visionary entrepreneur born and raised in Khayelitsha, our brand is dedicated to producing quality and affordable wines sourced from local wine producers across the province.</p>
           </div>

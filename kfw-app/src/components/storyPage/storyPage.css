@@ -32,15 +32,10 @@
   font-size: 5vw;
 }
 
-.text {
+.story-page-text {
   color: black;
   font-family: 'Playfair Display', serif;
-  font-size: 2.5vh;
-}
-@media screen and (min-width: 1024px) {
-  .text {
-    font-size: 4vh; /* Increase the font size for larger screens */
-  }
+  font-size: 1.5rem;
 }
 
 .caption {
