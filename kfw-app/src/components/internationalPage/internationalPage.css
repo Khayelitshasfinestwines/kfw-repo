@@ -1,124 +1,85 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .heading-container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .container {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 7vw;
-    font-family: 'Playfair Display', serif;
-    color: white;
-  }
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
 
-  .text {
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5vh;
-  }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
 
-  .spacing p{
-    margin-top: 3.5vh;
-    margin-bottom: 3.5vh;
-  }
+.text {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
 
-  .heading-container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .container {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
-  
-  .caption {
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 5vh;
-    font-weight: bold;
-  }
-  .caption-sub {
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 3vh;
-    font-style: italic;
-  }
-  @media screen and (min-width: 1024px) {
-    .caption-sub {
-      font-size: 4vh; /* Increase the font size for larger screens */
-    }
-  }
-  
-  .spacing p{
-    margin-top: 3.5vh;
-    margin-bottom: 3.5vh;
-  }
-  
-  .text {
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5vh;
-    
-  }
-  @media screen and (min-width: 1024px) {
-    .text {
-      font-size: 5vh; /* Increase the font size for larger screens */
-    }
-  }
+.spacing p {
+  margin: 1rem 0;
+}
 
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1.5vh;
-    margin-left: auto;
-  margin-right: auto;
-  max-width: 250px;
-  }
-  @media screen and (min-width: 1024px) {
-    .contact-container {
-        max-width: 500px;
-    }
-  }
-  
-  .contact-row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  .contact-row p {
-    text-align: left;
-  }
+.caption {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
-  .contact-row svg {
-    margin-right: 2vh;
-  }
+.caption-sub {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+}
 
-  
-  .name {
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5vh;
-    font-weight: bold;
-  }
-  @media screen and (min-width: 1024px) {
-    .name {
-      font-size: 6vh; /* Increase the font size for larger screens */
-    }
-  }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
 
-  
+.contact-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-row p {
+  margin-left: 0.5rem;
+}
+
+.contact-row svg {
+  margin-right: 0.5rem;
+}
+
+.name {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+}

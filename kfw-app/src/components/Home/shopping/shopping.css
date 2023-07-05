@@ -95,14 +95,16 @@
 .image-card-text-bottom {
   position: absolute;
   transform: translateY(0px);
-  font-family: 'Playfair Display', 'seriff';
-  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif; /* Change to a serif font for a sophisticated look */
+  font-size: 2rem; /* Reduce the font size for a more refined appearance */
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
+  color: #333; /* Adjust the color to improve readability */
+  font-style: italic; /* Apply italic style for a more elegant touch */
 }
 
 .image-card-text-heading {
