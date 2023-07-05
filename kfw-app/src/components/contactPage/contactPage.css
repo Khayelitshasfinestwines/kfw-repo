@@ -4,6 +4,16 @@
     color: white;
   }
   
+  .centered-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+
   .container-page {
     position: relative;
     text-align: center;

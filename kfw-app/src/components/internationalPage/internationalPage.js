@@ -8,7 +8,7 @@ const InternationalPage = () => {
     <div>
       <div className="heading-container-int">
         <img src={InternationalImage} alt="international header-int" style={{ width: '100%' }} />
-        <div className="centered">International</div>
+        <div className="centered-int">International</div>
       </div>
 
       <div className="container-int">
