@@ -1,51 +1,41 @@
-.heading-container {
+.heading-container-page {
     position: relative;
     text-align: center;
     color: white;
   }
   
-  .container {
+  .container-page {
     position: relative;
     text-align: center;
     color: black;
   }
   
-  .caption {
+  .caption-page {
     color: black;
     font-family: 'Playfair Display', serif;
-    font-size: 5vh;
+    font-size: 2rem;
     font-weight: bold;
   }
-  .caption-sub {
+  .caption-sub-page {
     color: black;
     font-family: 'Playfair Display', serif;
     font-size: 3vh;
     font-style: italic;
   }
-  @media screen and (min-width: 1024px) {
-    .caption-sub {
-      font-size: 4vh; /* Increase the font size for larger screens */
-    }
-  }
   
-  .spacing p{
+  .spacing-page p{
     margin-top: 3.5vh;
     margin-bottom: 3.5vh;
   }
   
-  .text {
+  .text-page {
     color: black;
     font-family: 'Playfair Display', serif;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     
   }
-  @media screen and (min-width: 1024px) {
-    .text {
-      font-size: 5vh; /* Increase the font size for larger screens */
-    }
-  }
 
-  .contact-container {
+  .contact-container-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,47 +44,37 @@
   margin-right: auto;
   max-width: 250px;
   }
-  @media screen and (min-width: 1024px) {
-    .contact-container {
-        max-width: 500px;
-    }
-  }
   
-  .contact-row {
+  .contact-row-page {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
   }
   
-  .contact-row p {
+  .contact-row-page p {
     text-align: left;
   }
 
-  .contact-row svg {
+  .contact-row-page svg {
     margin-right: 2vh;
   }
 
   
-  .name {
+  .name-page {
     color: black;
     font-family: 'Playfair Display', serif;
     font-size: 3.5vh;
     font-weight: bold;
   }
-  @media screen and (min-width: 1024px) {
-    .name {
-      font-size: 6vh; /* Increase the font size for larger screens */
-    }
-  }
 
-  .contact-page-icons {
+  .contact-page-icons-page {
     display: flex;
     justify-content: center;
     margin-top: 10px;
   }
   
-  .contact-page-icons a {
+  .contact-page-icons-page a {
     margin: 0 2vw;
     display: flex;
     align-items: center;
@@ -105,27 +85,27 @@
     font-size: 10vh;
   }
   
-  .contact-page-icons a:focus,
-  .contact-page-icons a:hover {
+  .contact-page-icons-page a:focus,
+  .contact-page-icons-page a:hover {
     color: grey;
   }
   
-  .contact-page-icons .instagram-icon {
+  .contact-page-icons-page .instagram-icon {
     background-color: white;
     color: black;
   }
   
-  .contact-page-icons .facebook-icon {
+  .contact-page-icons-page .facebook-icon {
     background-color: white;
     color: black;
   }
   
-  .contact-page-icons .tiktok-icon {
+  .contact-page-icons-page .tiktok-icon {
     background-color: white;
     color: black;
   }
   
-  .contact-page-icons .twitter-icon {
+  .contact-page-icons-page .twitter-icon {
     background-color: white;
     color: black;
   }
