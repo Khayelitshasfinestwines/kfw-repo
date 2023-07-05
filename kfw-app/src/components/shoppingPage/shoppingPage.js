@@ -6,6 +6,8 @@ import ShoppingImage2 from './cardImages/wineImage2.jpg';
 import ShoppingImage3 from './cardImages/comingsoonNEW3Shopping.jpg';
 import './shoppingPage.css';
 import BackgroundImage from './shopImage.png'
+import { v4 as uuidv4 } from 'uuid';
+import { firebase } from '../../firebase/firebase';
 
 const Home = () => {
   const addToCart = async () => {
