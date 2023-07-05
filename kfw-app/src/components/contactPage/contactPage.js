@@ -1,7 +1,6 @@
 import React from 'react';
 import './contactPage.css';
 import ContactPageImage from './contactPageImages/contactNEW2.JPG';
-import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
