@@ -2,7 +2,7 @@ import React from 'react';
 import './shopping.css';
 import ShoppingImage from './shoppingImages/wineImage2NEW.jpg';
 import ShoppingImage2 from './shoppingImages/wineImageNEW.jpg';
-import ShoppingImage3 from './shoppingImages/wineImage3NEW.jpg';
+import ShoppingImage3 from './shoppingImages/comingsoonNEW3.jpg';
 import { Link } from 'react-router-dom';
 
 const Shopping = () => {
