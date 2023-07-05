@@ -6,7 +6,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase';
 
 
-const LoginPage = ({renderRegisterPage, closeLogin}) => {
+const LoginPage = ({renderRegisterPage, closeLogin, isLoggedIn, setIsLoggedIn}) => {
 
   const [isRegisterPageVisible, setIsRegisterPageVisible] = useState(false);
 
@@ -31,6 +31,8 @@ const LoginPage = ({renderRegisterPage, closeLogin}) => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       closeLogin();
+      setIsLoggedIn(true);
+      
       
 
     } catch (err) {
