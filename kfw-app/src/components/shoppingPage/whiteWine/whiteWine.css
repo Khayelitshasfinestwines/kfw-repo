@@ -37,3 +37,22 @@
 .btn:hover {
   
 }
+.confirmationMessage {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+}
+.confirmationText {
+  font-family: "Playfair Display", "serif";
+  font-size: 2rem;
+}
+.confirmationbutton {
+  font-family: 'Playfair Display', 'serif';
+  margin: auto;
+  display: block; /* Add this line */
+}
+
