@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div>
       <div className="heading-container mb-2">
-        <img src={BackgroundImage} alt="collection header" style={{ width: '100%', opacity: '75%' }} />
+        <img src={BackgroundImage} alt="collection header" style={{ width: '100%', opacity: '80%' }} />
         <div className="centered">Our Collection</div>
       </div>
       <div className='container-shopping '>
