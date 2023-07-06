@@ -1,0 +1,1 @@
+Refer to master document for details on implementation
